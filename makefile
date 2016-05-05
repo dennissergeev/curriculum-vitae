@@ -3,7 +3,7 @@ src = template.tex details.yml
 FLAGS = --latex-engine=xelatex
 
 open: output.pdf
-	xdg-open output.pdf > pdf_open.log
+	evince output.pdf
 
 output.pdf : $(src)
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)

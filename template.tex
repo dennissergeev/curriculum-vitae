@@ -2,7 +2,6 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[$fontsize$, a4paper]{article}
-
 % LAYOUT
 %--------------------------------
 % Margins
@@ -33,15 +32,22 @@ $endif$
 \usepackage{xunicode}
 \usepackage{xltxtra}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
-\defaultfontfeatures{Mapping=tex-text}
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
-% Cool ampersand
-\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+\setmainfont[Mapping=tex-text,Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+%% Cool ampersand
+%\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+% Symbols from font-awesome
+\usepackage{fontawesome}
+\newcommand{\mobilephonesymbol}   {{\Large\faMobilePhone}~~}
+\newcommand{\fixedphonesymbol}    {\faPhone~~}
+\newcommand{\emailsymbol}         {\faEnvelope~~}           % alternative: \faInbox
+\newcommand{\homepagesymbol}      {\faGlobe~~}              % alternative: \faHome
+\newcommand{\twittersymbol} {\faTwitter~~}
+\newcommand{\githubsymbol}  {\faGithub~~}
 
 % MARGIN NOTES
 %--------------------------------
 \usepackage{marginnote}
-\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\newcommand{\note}[1]{\marginnote{\small #1}}
 \renewcommand*{\raggedleftmarginnote}{}
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
@@ -70,68 +76,73 @@ $endif$
   citecolor=[rgb]{0.117,0.682,0.858}
 }
 
+% MISCELANNEOUS
+%--------------------------------
+\usepackage{datetime}
+
 % DOCUMENT
 %--------------------------------
 \begin{document}
+\flushright{\small \texttt{Updated: \shortmonthname[\the\month] \the\year}}\flushleft
 
 {\LARGE $name$}\\[.2cm]
 
-$if(urls)$
-\begin{multicols}{2}
-$endif$
-
+%\begin{multicols}{2}
 $for(address)$
 $address$\\
 $endfor$
 
-\vspace{-10pt}
+\vspace{10pt}
+%\columnbreak
 
-$phone$\\
-\href{mailto:$email$}{$email$}\\
-
-
-$if(urls)$
-\columnbreak
-
-$for(urls)$
-\href{http://$urls$}{$urls$}\\
-$endfor$
-\end{multicols}
+$if(mobilephone)$
+\mobilephonesymbol$mobilephone$\\
+$endif$
+$if(email)$
+\emailsymbol\href{mailto:$email$}{$email$}\\
+$endif$
+$if(homepage)$
+\homepagesymbol\href{http://$homepage$}{$homepage$}\\
+$endif$
+$if(github)$
+\githubsymbol\href{http://github.com/$github$}{$github$}\\
+$endif$
+$if(twitter)$
+\twittersymbol\href{http://twitter.com/$twitter$}{$twitter$}\\
 $endif$
 
-\vspace{30pt}
-
-$if(intro)$
-$intro$
-$endif$
+%\end{multicols}
 
 \subsection*{Areas of Interest}
-$if(skills)$
+$if(interests)$
 \begin{itemize}
-    $for(skills)$
-      \item $skills$
+    $for(interests)$
+      \item $interests$
     $endfor$
 \end{itemize}
 $endif$
 
-% \vfill
+\vspace{15pt}
 
-\vspace{25pt}
+\section*{Education}
+\noindent
+$for(education)$
+\note{$education.years$}$if(education.degree)$$education.degree$$endif$\\
+$if(education.distinct)$$education.distinct$\\$endif$
+$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$\\
+$if(education.university)$\emph{$education.university$}$endif$\\
+$if(education.department)$\emph{$education.department$}$endif$\\
+$if(education.supervisor)$\href{mailto:$education.superemail$}{$education.supervisor$}$endif$\\[.2cm]
+$endfor$
+\vspace{20pt}
 
+$if(experience)$
 \section*{Previous Experience}
 \noindent
 $for(experience)$
 \note{$experience.years$}\textsc{$experience.employer$}\\
 \emph{$experience.job$}\\
 $experience.city$\\[.2cm]
-$endfor$
-
-$if(education)$
-\section*{Education}
-\noindent
-$for(education)$
-\note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
 $endfor$
 $endif$
 
