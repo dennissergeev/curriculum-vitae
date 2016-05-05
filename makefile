@@ -1,13 +1,17 @@
 TEX = pandoc
 src = template.tex details.yml
+out = output.pdf
 FLAGS = --latex-engine=xelatex
 
-open: output.pdf
-	evince output.pdf
+open: $(out)
+	evince $(out)
 
-output.pdf : $(src)
+preview: $(out)
+	convert $(out)[0] preview.png
+
+$(out) : $(src)
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
 
 .PHONY: clean
 clean :
-	rm output.pdf
+	rm $(out)
