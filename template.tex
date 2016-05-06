@@ -127,14 +127,26 @@ $endif$
 \section*{Education}
 \noindent
 $for(education)$
-\note{$education.years$}$if(education.degree)$$education.degree$$endif$\\
+\note{$education.years$}$if(education.degree)$$education.degree$\\$endif$
 $if(education.distinct)$$education.distinct$\\$endif$
-$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$\\
-$if(education.university)$\emph{$education.university$}$endif$\\
-$if(education.department)$\emph{$education.department$}$endif$\\
-$if(education.supervisor)$\href{mailto:$education.superemail$}{$education.supervisor$}$endif$\\[.2cm]
+$if(education.thesis)$Thesis title: \textbf{$education.thesis$}\\$endif$
+$if(education.department)$\emph{$education.department$}\\$endif$
+$if(education.institution)$\emph{$education.institution$}\\$endif$
+$if(education.supervisor)$\href{mailto:$education.superemail$}{$education.supervisor$}\\$endif$
 $endfor$
 \vspace{20pt}
+
+$if(internships)$
+\section*{Internships}
+\noindent
+$for(internships)$
+\note{$internships.years$}$if(internships.institution)$\emph{$internships.institution$}\\$endif$
+$if(internships.department)$\emph{$internships.department$}\\$endif$
+$if(internships.location)$\emph{$internships.location$}\\$endif$
+$if(internships.supervisor)$\href{mailto:$internships.superemail$}{$internships.supervisor$}\\$endif$
+$endfor$
+\vspace{20pt}
+$endif$
 
 $if(experience)$
 \section*{Previous Experience}

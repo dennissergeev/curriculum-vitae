@@ -27,7 +27,7 @@ education:
   degree: PhD in Meteorology
   thesis: Dynamics and Predictability of Polar Lows
   department: School of Environmental Sciences
-  university: University of East Anglia
+  institution: University of East Anglia
   supervisor: Ian A. Renfrew
   superemail: i.renfrew@uea.ac.uk
 - years: 2009--2014
@@ -35,9 +35,23 @@ education:
   thesis: Idealised numerical modelling of polar mesocyclone dynamics
   distinct: With Honours
   department: Faculty of Geography
-  university: Lomonosov Moscow State University
+  institution: Lomonosov Moscow State University
   supervisor: Victor Stepanenko
   superemail: stepanen@srcc.msu.ru
+
+internships:
+- years: Oct. 2013
+  department: Geophysical Institute
+  institution: University of Bergen
+  location: Bergen, Norway
+  supervisor: Thomas Spengler
+  superemail: thomas.spengler@gfi.uib.no
+- years: Jul. 2012
+  department: Laboratory of Climate Theory
+  institution: A.M. Obukhov Institute of Atmospheric Physics
+  location: Moscow, Russia
+  supervisor: Alexey Eliseev
+  superemail: eliseev@ifaran.ru
 
 # Settings
 mainfont: Linux Libertine 0
