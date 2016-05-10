@@ -32,7 +32,7 @@ $endif$
 \usepackage{xunicode}
 \usepackage{xltxtra}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
-\setmainfont[Mapping=tex-text,Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+\setmainfont[Mapping=tex-text,Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
 %% Cool ampersand
 %\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
 % Symbols from font-awesome
@@ -113,8 +113,8 @@ $endif$
 
 %\end{multicols}
 
-\subsection*{Areas of Interest}
 $if(interests)$
+\subsection*{Areas of Interest}
 \begin{itemize}
     $for(interests)$
       \item $interests$
@@ -132,37 +132,33 @@ $if(education.distinct)$$education.distinct$\\$endif$
 $if(education.thesis)$Thesis title: \textbf{$education.thesis$}\\$endif$
 $if(education.department)$\emph{$education.department$}\\$endif$
 $if(education.institution)$\emph{$education.institution$}\\$endif$
-$if(education.supervisor)$\href{mailto:$education.superemail$}{$education.supervisor$}\\$endif$
+$if(education.supervisor)$Supervisor: \href{mailto:$education.superemail$}{$education.supervisor$}\\$endif$[0.2cm]
 $endfor$
 \vspace{20pt}
 
-$if(internships)$
 \section*{Internships}
 \noindent
-$for(internships)$
-\note{$internships.years$}$if(internships.institution)$\emph{$internships.institution$}\\$endif$
-$if(internships.department)$\emph{$internships.department$}\\$endif$
-$if(internships.location)$\emph{$internships.location$}\\$endif$
-$if(internships.supervisor)$\href{mailto:$internships.superemail$}{$internships.supervisor$}\\$endif$
+$for(internship)$
+\note{$internship.years$}$if(internship.institution)$\emph{$internship.institution$}\\$endif$
+$if(internship.department)$$internship.department$\\$endif$
+$if(internship.location)$$internship.location$\\$endif$
+$if(internship.supervisor)$Supervisor: \href{mailto:$internship.superemail$}{$internship.supervisor$}\\$endif$[0.2cm]
 $endfor$
 \vspace{20pt}
-$endif$
 
-$if(experience)$
-\section*{Previous Experience}
+\section*{Fieldwork experience}
 \noindent
-$for(experience)$
-\note{$experience.years$}\textsc{$experience.employer$}\\
-\emph{$experience.job$}\\
-$experience.city$\\[.2cm]
+$for(fieldwork)$
+\note{$fieldwork.years$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
+$if(fieldwork.descr)$\emph{$fieldwork.descr$}\\$endif$
+$if(fieldwork.location)$$fieldwork.location$\\$endif$
+[0.2cm]
 $endfor$
-$endif$
+\vspace{20pt}
 
-$if(languages)$
 \section*{Languages}
 $for(languages)$
 \emph{$languages.language$} ($languages.proficiency$)\\
 $endfor$
-$endif$
 
 \end{document}

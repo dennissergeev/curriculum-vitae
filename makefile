@@ -1,10 +1,10 @@
 TEX = pandoc
 src = template.tex details.yml
 out = output.pdf
-FLAGS = --latex-engine=xelatex
+FLAGS = --smart --latex-engine=xelatex
 
 open: $(out)
-	evince $(out)
+	xdg-open $(out)
 
 preview: $(out)
 	convert $(out)[0] preview.png
