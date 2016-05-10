@@ -48,7 +48,8 @@ $endif$
 %--------------------------------
 \usepackage{marginnote}
 \newcommand{\note}[1]{\marginnote{\small #1}}
-\renewcommand*{\raggedleftmarginnote}{}
+%\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparwidth}{40mm}
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
 
@@ -156,9 +157,30 @@ $if(fieldwork.location)$$fieldwork.location$\\$endif$
 $endfor$
 \vspace{20pt}
 
+\section*{Teaching experience}
+\noindent
+$for(teaching)$
+\note{$teaching.years$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
+$if(teaching.institution)$$teaching.institution$\\$endif$
+$if(teaching.courses)$Courses:
+\begin{itemize}
+    $for(teaching.courses)$
+      \item \small{$teaching.courses$}
+    $endfor$
+\end{itemize}
+$endif$
+$endfor$
+\vspace{20pt}
+
+\section*{Computer skills}
+$for(skills)$
+\note{$skills.group$}$if(skills.forte)$\textbf{$skills.forte$},$endif$
+$skills.skill$\\
+$endfor$
+
 \section*{Languages}
 $for(languages)$
-\emph{$languages.language$} ($languages.proficiency$)\\
+\note{$languages.language$} $languages.proficiency$\\
 $endfor$
 
 \end{document}

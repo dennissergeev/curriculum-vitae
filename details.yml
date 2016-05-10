@@ -75,10 +75,47 @@ fieldwork:
       descr: Basic training in meteorology, hydrology, geomorphology, soil science, biogeography, topography
       location: Kaluga region, Russia
 
+teaching:
+    - years: 2015--Present 
+      title: Teaching assistance
+      institution: University of East Anglia
+      courses: 
+          - Meteorology
+          - Modelling Environmental Processes
+          - Dynamical Meteorology
+          - Numerical Skills for Scientists
+          - Physical and Chemical Processes in Earth's System
+
+skills:
+    - group: Operating systems
+      forte: Linux
+      skill: Unix, Windows
+    - group: Computer Languages
+      forte: Python
+      skill: Fortran
+    - group: Data analysis and visualizing
+      forte: Python
+      skill: MATLAB, NCL, Paraview
+    - group: Parallel programming
+      skill: MPI, OpenMP
+    - group: Version control systems
+      skill: Git, Subversion
+    - group: Document preparation
+      skill: LaTeX, Markdown
+    - group: Web development
+      skill: HTML, CSS
+
+languages:
+    - language: Russian
+      proficiency: Native speaker
+    - language: English
+      proficiency: Fluent
+    - language: French
+      proficiency: Basic
 
 # Settings
 mainfont: Linux Libertine O 
 fontsize: 10pt
 lang: English
-geometry: a4paper, left=35mm, right=35mm, top=21mm, bottom=17mm
+geometry: a4paper, left=50mm, right=35mm, top=21mm, bottom=17mm
 ---
