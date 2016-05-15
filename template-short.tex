@@ -81,11 +81,12 @@ $endif$
 % MISCELANNEOUS
 %--------------------------------
 \usepackage{datetime}
+\newdateformat{mydate}{\shortmonthname[\THEMONTH] \THEYEAR}
 
 % DOCUMENT
 %--------------------------------
 \begin{document}
-\flushright{\small \texttt{Updated: \shortmonthname[\the\month] \the\time}}\flushleft
+\flushright{\small \texttt{Updated: \mydate\today}\flushleft
 
 {\LARGE $name$}\\[.2cm]
 
@@ -137,49 +138,6 @@ $if(education.supervisor)$Supervisor: \href{mailto:$education.superemail$}{$educ
 $endfor$
 \vspace{10pt}
 
-\section*{Internships}
-\noindent
-$for(internship)$
-\note{$internship.time$}$if(internship.institution)$\emph{$internship.institution$}\\$endif$
-$if(internship.department)$$internship.department$\\$endif$
-$if(internship.location)$$internship.location$\\$endif$
-$if(internship.supervisor)$Supervisor: \href{mailto:$internship.superemail$}{$internship.supervisor$}\\$endif$[0.2cm]
-$endfor$
-\vspace{10pt}
-
-\section*{Vocational training}
-\noindent
-$for(training)$
-    $if(training.type)$\subsection*{$training.type$}$endif$
-    $for(training.items)$
-        $if(training.items.time)$\note{$training.items.time$}$endif$
-        $if(training.items.url)$\href{$training.items.url$}{$training.items.name$}$else$\textbf{$training.items.name$}$endif$\\[0.1cm]
-    $endfor$
-$endfor$
-
-\section*{Fieldwork Experience}
-\noindent
-$for(fieldwork)$
-\note{$fieldwork.time$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
-$if(fieldwork.info)$\emph{$fieldwork.info$}\\$endif$
-$if(fieldwork.location)$$fieldwork.location$\\$endif$
-[0.2cm]
-$endfor$
-
-\section*{Teaching Experience}
-\noindent
-$for(teaching)$
-\note{$teaching.time$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
-$if(teaching.institution)$$teaching.institution$\\$endif$
-$if(teaching.courses)$Courses:
-\begin{itemize}
-    $for(teaching.courses)$
-      \item \small{$teaching.courses$}
-    $endfor$
-\end{itemize}
-$endif$
-$endfor$
-
 \section*{Publications}
 \noindent
 $for(publications)$
@@ -189,17 +147,6 @@ $for(publications)$
     \item $publications.items.authors$. $publications.items.time$. $publications.items.title$. \emph{$publications.items.journal$}, \textbf{$publications.items.volume$}$if(publications.items.issue)$($publications.items.issue$)$endif$: $publications.items.pages$
     $endfor$
 \end{enumerate}
-$endfor$
-
-\section*{Conferences and Workshops}
-\noindent
-$for(conferences)$
-\subsection*{$conferences.type$}
-$for(conferences.items)$
-\note{$conferences.items.date$}
-$if(conferences.items.url)$\href{$conferences.items.url$}{$conferences.items.title$}$else$\textbf{$conferences.items.title$}$endif$\\
-\emph{$conferences.items.conference$}\\$conferences.items.location$\\[0.2cm]
-$endfor$
 $endfor$
 
 \section*{Awards and Scholarships}
@@ -213,32 +160,6 @@ $endfor$
 \noindent
 $for(grants)$
 \note{$grants.time$} \textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
-$endfor$
-
-\section*{Membership in Professional Associations} 
-\noindent
-$for(memberships)$
-\note{$memberships.time$} $memberships.body$\\[0.1cm]
-$endfor$
-
-\section*{Vocational Experience}
-\noindent
-$for(other)$
-\note{$other.time$}$if(other.url)$\href{$other.url$}{$other.title$}$else$\textbf{$other.title$}$endif$\\
-$if(other.info)$\emph{$other.info$}\\$endif$
-$if(other.location)$$other.location$\\$endif$
-[0.2cm]
-$endfor$
-
-\section*{Outreach} 
-\noindent
-$for(outreach)$
-\note{$outreach.time$} \textbf{$outreach.name$}\\[0.1cm]
-\begin{itemize}
-$for(outreach.items)$
-    \item \href{$outreach.items.url$}{$outreach.items.title$}
-$endfor$
-\end{itemize}
 $endfor$
 
 \section*{Computer Skills}

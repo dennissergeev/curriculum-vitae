@@ -1,17 +1,25 @@
 TEX = pandoc
-src = template.tex details.yml
-out = output.pdf
+srclong = template-long.tex details.yml
+srcshort = template-short.tex details.yml
+outlong = cv-sergeev-long.pdf
+outshort = cv-sergeev-short.pdf
 FLAGS = --smart --latex-engine=xelatex
 
-open: $(out)
-	xdg-open $(out)
+long: $(outlong)
+	xdg-open $(outlong)
 
-preview: $(out)
-	convert $(out)[0] preview.png
+short: $(outshort)
+	xdg-open $(outshort)
 
-$(out) : $(src)
+preview: $(outlong)
+	convert $(outlong)[0] preview.png
+
+$(outshort) : $(srcshort)
+	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
+
+$(outlong) : $(srclong)
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
 
 .PHONY: clean
 clean :
-	rm $(out)
+	rm $(outlong) $(outshort)
