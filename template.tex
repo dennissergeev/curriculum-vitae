@@ -147,7 +147,7 @@ $if(internship.supervisor)$Supervisor: \href{mailto:$internship.superemail$}{$in
 $endfor$
 \vspace{20pt}
 
-\section*{Fieldwork experience}
+\section*{Fieldwork Experience}
 \noindent
 $for(fieldwork)$
 \note{$fieldwork.years$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
@@ -157,7 +157,7 @@ $if(fieldwork.location)$$fieldwork.location$\\$endif$
 $endfor$
 \vspace{20pt}
 
-\section*{Teaching experience}
+\section*{Teaching Experience}
 \noindent
 $for(teaching)$
 \note{$teaching.years$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
@@ -172,7 +172,67 @@ $endif$
 $endfor$
 \vspace{20pt}
 
-\section*{Computer skills}
+\section*{Publications}
+\noindent
+$for(publications)$
+\subsection*{$publications.name$}
+\begin{enumerate}
+    $for(publications.items)$
+    \item $publications.items.authors$. $publications.items.year$. $publications.items.title$. \emph{$publications.items.journal$}, \textbf{$publications.items.volume$}$if(publications.items.issue)$($publications.items.issue$)$endif$: $publications.items.pages$
+    $endfor$
+\end{enumerate}
+$endfor$
+
+\section*{Conferences and Workshops}
+\noindent
+$for(conferences)$
+\subsection*{$conferences.type$}
+$for(conferences.items)$
+\note{$conferences.items.date$}
+$if(conferences.items.url)$\href{$conferences.items.url$}{$conferences.items.title$}$else$\textbf{$conferences.items.title$}$endif$\\
+\emph{$conferences.items.conference$}\\$conferences.items.location$\\[0.2cm]
+$endfor$
+$endfor$
+
+\section*{Awards and Scholarships}
+\noindent
+$for(awards)$
+\note{$awards.year$} \textbf{$awards.name$}\\$awards.by$\\[0.2cm]
+$endfor$
+
+\section*{Grants}
+\noindent
+$for(grants)$
+\note{$grants.years$} \textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
+$endfor$
+
+\section*{Membership in Professional Associations} 
+\noindent
+$for(memberships)$
+\note{$memberships.years$} $memberships.body$\\[0.1cm]
+$endfor$
+
+\section*{Other Professional Experience}
+\noindent
+$for(other)$
+\note{$other.years$}$if(other.url)$\href{$other.url$}{$other.title$}$else$\textbf{$other.title$}$endif$\\
+$if(other.descr)$\emph{$other.descr$}\\$endif$
+$if(other.location)$$other.location$\\$endif$
+[0.2cm]
+$endfor$
+
+\section*{Outreach} 
+\noindent
+$for(outreach)$
+\note{$outreach.years$} \textbf{$outreach.name$}\\[0.1cm]
+\begin{itemize}
+$for(outreach.items)$
+    \item \href{$outreach.items.url$}{$outreach.items.title$}
+$endfor$
+\end{itemize}
+$endfor$
+
+\section*{Computer Skills}
 $for(skills)$
 \note{$skills.group$}$if(skills.forte)$\textbf{$skills.forte$},$endif$
 $skills.skill$\\

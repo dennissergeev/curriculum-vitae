@@ -40,37 +40,40 @@ education:
       superemail: stepanen@srcc.msu.ru
 
 internship:
-    - years: "Oct. 2013"
+    - years: Oct 2013
       department: Geophysical Institute
       institution: University of Bergen
       location: Bergen, Norway
       supervisor: Thomas Spengler
       superemail: thomas.spengler@gfi.uib.no
-    - years: "Jul. 2012"
+    - years: Jul 2012
       department: Laboratory of Climate Theory
       institution: A.M. Obukhov Institute of Atmospheric Physics
       location: Moscow, Russia
       supervisor: Alexey Eliseev
       superemail: eliseev@ifaran.ru
 
+training:
+    
+
 fieldwork:
-    - years: Aug. 2012 
+    - years: Aug 2012 
       title: Field practice in meteorology
       descr: Attempt to understanding of prevailing mesoscale processes through wind characteristic measurements and lake hydrothermodynamical modelling
       location: Kronotsky National Reservation, Kamchatka pen., Russia
-    - years: Jan.--Feb. 2012 
+    - years: Jan--Feb 2012 
       title: Field practice in meteorology
       descr: Measurements of the convective boundary layer over the polynya
       location: White Sea Biological Station, Karel Republic, Russia
-    - years: Jun.--Jul. 2011
+    - years: Jun--Jul 2011
       title: Field practice in meteorology
       descr: Basic field techniques in atmospheric sciences (profiling of atmosphere, study of atmospheric stratification and radiative measurements)
       location: Khibiny mountains, Murmansk region, Russia
-    - years: Jan.--Feb. 2011
+    - years: Jan--Feb 2011
       title: Field practice in meteorology
       descr: Micrometeorological measurements, ice-breeze modelling
       location: White Sea Biological Station, Karel Republic, Russia
-    - years: Jun.--Jul. 2010 
+    - years: Jun--Jul 2010 
       title: Field practice in geographical studies
       descr: Basic training in meteorology, hydrology, geomorphology, soil science, biogeography, topography
       location: Kaluga region, Russia
@@ -85,6 +88,127 @@ teaching:
           - Dynamical Meteorology
           - Numerical Skills for Scientists
           - Physical and Chemical Processes in Earth's System
+
+publications:
+    - name: Peer-reviewed
+      items:
+          - authors: Eliseev AV, Sergeev DE
+            year: 2014
+            title: Impact of Subgrid Scale Vegetation Heterogeneity on the Simulation of Carbon Cycle Characteristics
+            journal: Izvestiya, Atmospheric and Oceanic Physics
+            volume: 50
+            issue: 3
+            pages: 259--270
+    - name: Proceedings
+      items:
+          - authors: Sergeev DE, Stepanenko VM
+            year: 2013
+            title: Numerical modelling of polar mesocyclones generation mechanisms
+            journal: International Conference ``Turbulence, atmosphere and climate dynamics" dedicated to A.M. Obukhov
+            volume: Selected papers
+            pages: 168--170
+          - authors: Sergeev DE, Zamyatina MY, Stepanenko VM
+            year: 2013
+            title: Thermal regime features of Kronotsky lake (in Russian)
+            journal: Kronotsky State Natural Biosphere Reserve Proceedings
+            volume: 3
+            pages: 29--41
+          - authors: Sergeev DE, Stepanenko VM
+            year: 2012
+            title: Parameterization of mesoscale sensible heat and methane fluxes in the region of Western Siberia
+            journal: International Conference and Early Career Scientists School on Environmental Observations, modelling and Information Systems (ENVIROMIS-2012)
+            volume: Selected papers
+            pages: 67--69
+
+conferences:
+    - type: Oral presentations
+      items:
+          - title: Structure of the shear-line polar low south of Svalbard
+            url: "http://slides.com/denissergeev/deck"
+            conference: 13th European Polar Lows Working Group (EPLWG) Workshop
+            date: Apr 2016
+            location: Paris, France
+    - type: Poster presentations
+      items: 
+          - title: Structure and dynamics of a shear-line polar low during a cold-air outbreak over the Norwegian Sea
+            conference: Royal Meteorological Society Student Conference
+            date: Jul 2015
+            location: Birmingham, UK
+          - title: Structure and dynamics of a shear-line polar low during a cold-air outbreak over the Norwegian Sea
+            conference: Dynamics of Atmosphere-Ice-Ocean Interactions in the High Latitudes workshop
+            date: Mar 2015 
+            location: Rosendal, Norway
+          - title: Numerical modelling of polar mesocyclones dynamics diagnosed by the energy budget
+            conference: European Geosciences Union (EGU) General Assembly
+            date: May 2014
+            location: Vienna, Austria
+          - title: Impact of subgrid-scale vegetation heterogeneity on results of climate model simulation of carbon cycle
+            conference: European Geosciences Union (EGU) General Assembly
+            date: Apr 2013
+            location: Vienna, Austria
+          - title: Numerical modelling of polar mesocyclones generation mechanisms
+            conference: European Geosciences Union (EGU) General Assembly
+            date: Apr 2013
+            location: Vienna, Austria
+
+awards:
+    - year: 2015
+      name: Travel Award
+      by: Dynamics of Atmosphere-Ice-Ocean Interactions in the High Latitudes workshop
+    - year: 2014--2018     
+      name: Lord Zuckerman scholarship
+      by: School of Environmental Sciences, University of East Anglia
+    - year: 2014
+      name: Young Scientist's Travel Award (YSTA)
+      by: European Geosciences Union (EGU) General Assembly
+    - year: 2014
+      name: Russian Academy of Sciences Young Scientist Medal
+      by: In the area of oceanology, atmospheric physics and geography
+
+grants:
+    - years: 2014--2016
+      title: Characteristics of the mesoscale atmospheric circulations in the Arctic and their influence on the atmosphere-ocean energy exchange
+      institution: Russian Foundation for Basic Research (RFBR) Grant
+    - years: 2013--2015
+      title: Multiscale modelling of turbulent atmospheric flow above sea surface with inhomogeneous ice cover
+      institution: Russian Foundation for Basic Research (RFBR) Grant
+    - years: 2013--2015
+      title: Developing and verification of the mesoscale sensible heat and tracers fluxes over hydrologically inhomogeneous surface
+      institution: Grant of the President of Russian Federation
+
+memberships:
+    - years: 2014--Present
+      body: Royal Meteorological Society (RMetS)
+
+outreach:
+    - years: 2015--Present
+      name: Contributor to SciSnack blogging platform
+      items:
+            - title: "Polar Lows: What Fuels Arctic Hurricanes?"
+              url: "http://www.scisnack.com/2015/03/04/polar-lows-what-fuels-arctic-hurricanes/"
+            - title: Disastrous Disaster Movies
+              url: "http://www.scisnack.com/2015/12/17/disastrous-disaster-movies/"
+            - title: Worldwide Weird Weather Words 
+              url: "http://www.scisnack.com/2014/12/17/worldwide-weird-weather-words/"
+
+other:
+    - years: 2015--Present
+      title: Python group coordinator
+      descr: Managing an unofficial group of Python language users
+      url: "http://ueapy.github.io"
+      location: University of East Anglia, UK
+    - years: Mar 2015
+      title: Rapporteur
+      descr: Dynamics of Atmosphere-Ice-Ocean Interactions in the High-Latitudes workshop
+      location: Rosendal, Norway
+    - years: Jun--Jul 2014
+      title: Professional translator
+      descr: Translation of documentation of meteorological equipment (En-Ru)
+      location: Retail and Consumer Merchandise ``Meteomaster" (Moscow, Russia)
+    - years: Aug--Sep 2013 
+      title: Weather Forecaster
+      descr: Forecast and Briefing Service
+      location: Main Aviation Meteorological Centre, Vnukovo Airport (Moscow, Russia)
 
 skills:
     - group: Operating systems
