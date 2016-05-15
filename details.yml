@@ -23,14 +23,14 @@ interests:
     - Extraterrestrial meteorology
 
 education:
-    - years: 2014--Present
+    - time: 2014--Present
       degree: PhD in Meteorology
       thesis: Dynamics and Predictability of Polar Lows
       department: School of Environmental Sciences
       institution: University of East Anglia
       supervisor: Ian A. Renfrew
       superemail: i.renfrew@uea.ac.uk
-    - years: 2009--2014
+    - time: 2009--2014
       degree: Specialist Diploma in Meteorology
       thesis: Idealised numerical modelling of polar mesocyclone dynamics
       distinct: With Honours
@@ -40,13 +40,13 @@ education:
       superemail: stepanen@srcc.msu.ru
 
 internship:
-    - years: Oct 2013
+    - time: Oct 2013
       department: Geophysical Institute
       institution: University of Bergen
       location: Bergen, Norway
       supervisor: Thomas Spengler
       superemail: thomas.spengler@gfi.uib.no
-    - years: Jul 2012
+    - time: Jul 2012
       department: Laboratory of Climate Theory
       institution: A.M. Obukhov Institute of Atmospheric Physics
       location: Moscow, Russia
@@ -54,32 +54,88 @@ internship:
       superemail: eliseev@ifaran.ru
 
 training:
-    
+    - items:
+        - name: WWRP/WCRP/Bolin Center Polar Prediction School
+          time: Apr 2016
+          url: "http://www.climate-cryosphere.org/wcrp/pcpi/meetings/abisko-pp-2016"
+        - name: UK Met Office Unified Model Training
+          time: Dec 2014
+          url: "http://cms.ncas.ac.uk/wiki/UmTraining"
+        - name: Global Climate Change course
+          time: Sep--Dec 2011
+          url: "http://gcc.aos.ecu.edu/"
+    - type: On-line courses
+      items:
+        - name: Topics in Polar Low Forecasting
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: Arctic Meteorology and Oceanography
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: Skew-T Mastery
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: "Principles of Convection: Buoyancy and CAPE"
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: Using Scatterometer Wind and Altimeter Wave Estimates in Marine Forecasting
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: "Polar Satellite Products for the Operational Forecaster: Microwave Analysis of Tropical Cyclones"
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: How Mesoscale Models Work
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: Jet Streams
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: Downscaling of NWP Data
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: "Satellite Feature Identification: Cyclogenesis"
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: The Balancing Act of Geostrophic Adjustment
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: Introduction to Statistics in Climatology
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: Monitoring the Climate System with Satellites
+          time: MetEd
+          url: "https://www.meted.ucar.edu"
+        - name: High Performance Scientific Computing
+          time: Coursera
+          url: "https://www.coursera.org/course/scicomp"
+        - name: Parallel Programming Using MPI Technologies
+          time: INTUIT
+          url: "http://www.intuit.ru"
 
 fieldwork:
-    - years: Aug 2012 
+    - time: Aug 2012 
       title: Field practice in meteorology
-      descr: Attempt to understanding of prevailing mesoscale processes through wind characteristic measurements and lake hydrothermodynamical modelling
+      info: Study of prevailing mesoscale processes via wind characteristic measurements and lake hydrothermodynamical modelling
       location: Kronotsky National Reservation, Kamchatka pen., Russia
-    - years: Jan--Feb 2012 
+    - time: Jan--Feb 2012 
       title: Field practice in meteorology
-      descr: Measurements of the convective boundary layer over the polynya
+      info: Measurements of the convective boundary layer over the polynya
       location: White Sea Biological Station, Karel Republic, Russia
-    - years: Jun--Jul 2011
+    - time: Jun--Jul 2011
       title: Field practice in meteorology
-      descr: Basic field techniques in atmospheric sciences (profiling of atmosphere, study of atmospheric stratification and radiative measurements)
+      info: Basic field techniques in atmospheric sciences (atmosphere vertical structure, turbulence and radiative measurements)
       location: Khibiny mountains, Murmansk region, Russia
-    - years: Jan--Feb 2011
+    - time: Jan--Feb 2011
       title: Field practice in meteorology
-      descr: Micrometeorological measurements, ice-breeze modelling
+      info: Micrometeorological measurements, ice-breeze modelling
       location: White Sea Biological Station, Karel Republic, Russia
-    - years: Jun--Jul 2010 
+    - time: Jun--Jul 2010 
       title: Field practice in geographical studies
-      descr: Basic training in meteorology, hydrology, geomorphology, soil science, biogeography, topography
+      info: Basic training in meteorology, hydrology, geomorphology, soil science, biogeography, topography
       location: Kaluga region, Russia
 
 teaching:
-    - years: 2015--Present 
+    - time: 2015--Present 
       title: Teaching assistance
       institution: University of East Anglia
       courses: 
@@ -93,7 +149,7 @@ publications:
     - name: Peer-reviewed
       items:
           - authors: Eliseev AV, Sergeev DE
-            year: 2014
+            time: 2014
             title: Impact of Subgrid Scale Vegetation Heterogeneity on the Simulation of Carbon Cycle Characteristics
             journal: Izvestiya, Atmospheric and Oceanic Physics
             volume: 50
@@ -102,19 +158,19 @@ publications:
     - name: Proceedings
       items:
           - authors: Sergeev DE, Stepanenko VM
-            year: 2013
+            time: 2013
             title: Numerical modelling of polar mesocyclones generation mechanisms
             journal: International Conference ``Turbulence, atmosphere and climate dynamics" dedicated to A.M. Obukhov
             volume: Selected papers
             pages: 168--170
           - authors: Sergeev DE, Zamyatina MY, Stepanenko VM
-            year: 2013
+            time: 2013
             title: Thermal regime features of Kronotsky lake (in Russian)
             journal: Kronotsky State Natural Biosphere Reserve Proceedings
             volume: 3
             pages: 29--41
           - authors: Sergeev DE, Stepanenko VM
-            year: 2012
+            time: 2012
             title: Parameterization of mesoscale sensible heat and methane fluxes in the region of Western Siberia
             journal: International Conference and Early Career Scientists School on Environmental Observations, modelling and Information Systems (ENVIROMIS-2012)
             volume: Selected papers
@@ -152,36 +208,40 @@ conferences:
             location: Vienna, Austria
 
 awards:
-    - year: 2015
+    - time: 2015
       name: Travel Award
       by: Dynamics of Atmosphere-Ice-Ocean Interactions in the High Latitudes workshop
-    - year: 2014--2018     
+    - time: 2014--2018     
       name: Lord Zuckerman scholarship
       by: School of Environmental Sciences, University of East Anglia
-    - year: 2014
+    - time: 2014
       name: Young Scientist's Travel Award (YSTA)
       by: European Geosciences Union (EGU) General Assembly
-    - year: 2014
+    - time: 2014
       name: Russian Academy of Sciences Young Scientist Medal
       by: In the area of oceanology, atmospheric physics and geography
+    - time: 2009
+      name: 3rd place in the All-Russian Geography Olympiad
+    - time: 2009
+      name: 1st place in the Lomonosov Geography Olympiad
 
 grants:
-    - years: 2014--2016
+    - time: 2014--2016
       title: Characteristics of the mesoscale atmospheric circulations in the Arctic and their influence on the atmosphere-ocean energy exchange
       institution: Russian Foundation for Basic Research (RFBR) Grant
-    - years: 2013--2015
+    - time: 2013--2015
       title: Multiscale modelling of turbulent atmospheric flow above sea surface with inhomogeneous ice cover
       institution: Russian Foundation for Basic Research (RFBR) Grant
-    - years: 2013--2015
+    - time: 2013--2015
       title: Developing and verification of the mesoscale sensible heat and tracers fluxes over hydrologically inhomogeneous surface
       institution: Grant of the President of Russian Federation
 
 memberships:
-    - years: 2014--Present
+    - time: 2014--Present
       body: Royal Meteorological Society (RMetS)
 
 outreach:
-    - years: 2015--Present
+    - time: 2015--Present
       name: Contributor to SciSnack blogging platform
       items:
             - title: "Polar Lows: What Fuels Arctic Hurricanes?"
@@ -192,22 +252,22 @@ outreach:
               url: "http://www.scisnack.com/2014/12/17/worldwide-weird-weather-words/"
 
 other:
-    - years: 2015--Present
+    - time: 2015--Present
       title: Python group coordinator
-      descr: Managing an unofficial group of Python language users
+      info: Managing an unofficial group of Python language users
       url: "http://ueapy.github.io"
       location: University of East Anglia, UK
-    - years: Mar 2015
+    - time: Mar 2015
       title: Rapporteur
-      descr: Dynamics of Atmosphere-Ice-Ocean Interactions in the High-Latitudes workshop
+      info: Dynamics of Atmosphere-Ice-Ocean Interactions in the High-Latitudes workshop
       location: Rosendal, Norway
-    - years: Jun--Jul 2014
+    - time: Jun--Jul 2014
       title: Professional translator
-      descr: Translation of documentation of meteorological equipment (En-Ru)
+      info: Translation of documentation of meteorological equipment (En-Ru)
       location: Retail and Consumer Merchandise ``Meteomaster" (Moscow, Russia)
-    - years: Aug--Sep 2013 
+    - time: Aug--Sep 2013 
       title: Weather Forecaster
-      descr: Forecast and Briefing Service
+      info: Forecast and Briefing Service
       location: Main Aviation Meteorological Centre, Vnukovo Airport (Moscow, Russia)
 
 skills:

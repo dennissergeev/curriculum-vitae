@@ -13,7 +13,8 @@
 
 % Enable multicolumns
 \usepackage{multicol}
-\setlength{\columnsep}{-3.5cm}
+\setlength{\columnseprule}{0.4pt}
+%\setlength{\columnsep}{0.5cm} % -3.5
 
 % Uncomment to suppress page numbers
 % \pagenumbering{gobble}
@@ -71,10 +72,10 @@ $endif$
   pdftitle={$name$'s CV},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
-  urlcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  citecolor=[rgb]{0.117,0.682,0.858}
+   urlcolor=[rgb]{0.05,0.1,0.3},
+  linkcolor=[rgb]{0.05,0.1,0.3},
+  linkcolor=[rgb]{0.05,0.1,0.3},
+  citecolor=[rgb]{0.05,0.1,0.3}
 }
 
 % MISCELANNEOUS
@@ -84,17 +85,16 @@ $endif$
 % DOCUMENT
 %--------------------------------
 \begin{document}
-\flushright{\small \texttt{Updated: \shortmonthname[\the\month] \the\year}}\flushleft
+\flushright{\small \texttt{Updated: \shortmonthname[\the\month] \the\time}}\flushleft
 
 {\LARGE $name$}\\[.2cm]
 
-%\begin{multicols}{2}
+\begin{multicols}{2}
 $for(address)$
 $address$\\
 $endfor$
 
 \vspace{10pt}
-%\columnbreak
 
 $if(mobilephone)$
 \mobilephonesymbol$mobilephone$\\
@@ -112,55 +112,64 @@ $if(twitter)$
 \twittersymbol\href{http://twitter.com/$twitter$}{$twitter$}\\
 $endif$
 
-%\end{multicols}
+\columnbreak
 
-$if(interests)$
 \subsection*{Areas of Interest}
 \begin{itemize}
     $for(interests)$
       \item $interests$
     $endfor$
 \end{itemize}
-$endif$
+
+\end{multicols}
 
 \vspace{15pt}
 
 \section*{Education}
 \noindent
 $for(education)$
-\note{$education.years$}$if(education.degree)$$education.degree$\\$endif$
+\note{$education.time$}$if(education.degree)$$education.degree$\\$endif$
 $if(education.distinct)$$education.distinct$\\$endif$
 $if(education.thesis)$Thesis title: \textbf{$education.thesis$}\\$endif$
 $if(education.department)$\emph{$education.department$}\\$endif$
 $if(education.institution)$\emph{$education.institution$}\\$endif$
 $if(education.supervisor)$Supervisor: \href{mailto:$education.superemail$}{$education.supervisor$}\\$endif$[0.2cm]
 $endfor$
-\vspace{20pt}
+\vspace{10pt}
 
 \section*{Internships}
 \noindent
 $for(internship)$
-\note{$internship.years$}$if(internship.institution)$\emph{$internship.institution$}\\$endif$
+\note{$internship.time$}$if(internship.institution)$\emph{$internship.institution$}\\$endif$
 $if(internship.department)$$internship.department$\\$endif$
 $if(internship.location)$$internship.location$\\$endif$
 $if(internship.supervisor)$Supervisor: \href{mailto:$internship.superemail$}{$internship.supervisor$}\\$endif$[0.2cm]
 $endfor$
-\vspace{20pt}
+\vspace{10pt}
+
+\section*{Vocational training}
+\noindent
+$for(training)$
+    $if(training.type)$\subsection*{$training.type$}$endif$
+    $for(training.items)$
+        $if(training.items.time)$\note{$training.items.time$}$endif$
+        $if(training.items.url)$\href{$training.items.url$}{$training.items.name$}$else$\textbf{$training.items.name$}$endif$\\[0.1cm]
+    $endfor$
+$endfor$
 
 \section*{Fieldwork Experience}
 \noindent
 $for(fieldwork)$
-\note{$fieldwork.years$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
-$if(fieldwork.descr)$\emph{$fieldwork.descr$}\\$endif$
+\note{$fieldwork.time$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
+$if(fieldwork.info)$\emph{$fieldwork.info$}\\$endif$
 $if(fieldwork.location)$$fieldwork.location$\\$endif$
 [0.2cm]
 $endfor$
-\vspace{20pt}
 
 \section*{Teaching Experience}
 \noindent
 $for(teaching)$
-\note{$teaching.years$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
+\note{$teaching.time$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
 $if(teaching.institution)$$teaching.institution$\\$endif$
 $if(teaching.courses)$Courses:
 \begin{itemize}
@@ -170,7 +179,6 @@ $if(teaching.courses)$Courses:
 \end{itemize}
 $endif$
 $endfor$
-\vspace{20pt}
 
 \section*{Publications}
 \noindent
@@ -178,7 +186,7 @@ $for(publications)$
 \subsection*{$publications.name$}
 \begin{enumerate}
     $for(publications.items)$
-    \item $publications.items.authors$. $publications.items.year$. $publications.items.title$. \emph{$publications.items.journal$}, \textbf{$publications.items.volume$}$if(publications.items.issue)$($publications.items.issue$)$endif$: $publications.items.pages$
+    \item $publications.items.authors$. $publications.items.time$. $publications.items.title$. \emph{$publications.items.journal$}, \textbf{$publications.items.volume$}$if(publications.items.issue)$($publications.items.issue$)$endif$: $publications.items.pages$
     $endfor$
 \end{enumerate}
 $endfor$
@@ -197,26 +205,27 @@ $endfor$
 \section*{Awards and Scholarships}
 \noindent
 $for(awards)$
-\note{$awards.year$} \textbf{$awards.name$}\\$awards.by$\\[0.2cm]
+\note{$awards.time$} \textbf{$awards.name$}\\
+$if(awards.by)$$awards.by$\\$endif$
 $endfor$
 
 \section*{Grants}
 \noindent
 $for(grants)$
-\note{$grants.years$} \textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
+\note{$grants.time$} \textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
 $endfor$
 
 \section*{Membership in Professional Associations} 
 \noindent
 $for(memberships)$
-\note{$memberships.years$} $memberships.body$\\[0.1cm]
+\note{$memberships.time$} $memberships.body$\\[0.1cm]
 $endfor$
 
-\section*{Other Professional Experience}
+\section*{Vocational Experience}
 \noindent
 $for(other)$
-\note{$other.years$}$if(other.url)$\href{$other.url$}{$other.title$}$else$\textbf{$other.title$}$endif$\\
-$if(other.descr)$\emph{$other.descr$}\\$endif$
+\note{$other.time$}$if(other.url)$\href{$other.url$}{$other.title$}$else$\textbf{$other.title$}$endif$\\
+$if(other.info)$\emph{$other.info$}\\$endif$
 $if(other.location)$$other.location$\\$endif$
 [0.2cm]
 $endfor$
@@ -224,7 +233,7 @@ $endfor$
 \section*{Outreach} 
 \noindent
 $for(outreach)$
-\note{$outreach.years$} \textbf{$outreach.name$}\\[0.1cm]
+\note{$outreach.time$} \textbf{$outreach.name$}\\[0.1cm]
 \begin{itemize}
 $for(outreach.items)$
     \item \href{$outreach.items.url$}{$outreach.items.title$}
