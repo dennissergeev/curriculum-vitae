@@ -184,6 +184,11 @@ conferences:
             conference: 13th European Polar Lows Working Group (EPLWG) Workshop
             date: Apr 2016
             location: Paris, France
+          - title: Structure of the shear-line polar low south of Svalbard
+            url: "http://slides.com/denissergeev/deck"
+            conference: NORPAN kick-off meeting
+            date: May 2016
+            location: Tokyo, Japan
     - type: Poster presentations
       items: 
           - title: Structure and dynamics of a shear-line polar low during a cold-air outbreak over the Norwegian Sea
