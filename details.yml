@@ -148,6 +148,11 @@ teaching:
 publications:
     - name: Peer-reviewed
       items:
+          - authors: Spengler T, Renfrew IA, Terpstra A, Tjernström M, Screen J, Brooks I, Carleton A, Chechin D, Chen L, Doyle J, Esau I, Hezel P, Jung T, Kohyama T,  Lüpkes C, McCusker K, Nygård T, Sergeev DE, Shupe M, Sodemann H, and Vihma T
+            time: 2016
+            title: High Latitude Dynamics of Atmosphere-Ice-Ocean Interactions
+            journal: Bulletin of American Meteorological Society 
+            pages: in press
           - authors: Eliseev AV, Sergeev DE
             time: 2014
             title: Impact of Subgrid Scale Vegetation Heterogeneity on the Simulation of Carbon Cycle Characteristics

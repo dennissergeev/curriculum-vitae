@@ -187,7 +187,7 @@ $for(publications)$
 \subsection*{$publications.name$}
 \begin{enumerate}
     $for(publications.items)$
-    \item $publications.items.authors$. $publications.items.time$. $publications.items.title$. \emph{$publications.items.journal$}, \textbf{$publications.items.volume$}$if(publications.items.issue)$($publications.items.issue$)$endif$: $publications.items.pages$
+    \item $publications.items.authors$. $publications.items.time$. $publications.items.title$. \emph{$publications.items.journal$}, \textbf{$publications.items.volume$}$if(publications.items.issue)$($publications.items.issue$): $endif$$publications.items.pages$
     $endfor$
 \end{enumerate}
 $endfor$

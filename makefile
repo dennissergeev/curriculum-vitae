@@ -5,6 +5,9 @@ outlong = cv-sergeev-long.pdf
 outshort = cv-sergeev-short.pdf
 FLAGS = --smart --latex-engine=xelatex
 
+all: $(outlong) $(outshort)
+	convert $(outlong)[0] preview.png
+
 long: $(outlong)
 	xdg-open $(outlong)
 
