@@ -148,6 +148,11 @@ teaching:
 publications:
     - name: Peer-reviewed
       items:
+          - authors: Sergeev DE, Renfrew IA, Spengler T, and Dorling SR
+            time: 2016
+            title: Structure of a shear-line polar low
+            journal: Q.J.R. Meteorol. Soc.
+            volume: Accepted
           - authors: Spengler T, Renfrew IA, Terpstra A, Tjernström M, Screen J, Brooks I, Carleton A, Chechin D, Chen L, Doyle J, Esau I, Hezel P, Jung T, Kohyama T,  Lüpkes C, McCusker K, Nygård T, Sergeev DE, Shupe M, Sodemann H, and Vihma T
             time: 2016
             title: High Latitude Dynamics of Atmosphere-Ice-Ocean Interactions
