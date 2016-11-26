@@ -267,10 +267,15 @@ outreach:
               url: "http://www.scisnack.com/2014/12/17/worldwide-weird-weather-words/"
 
 other:
+    - time: Nov 2016
+      title: Training course "Introduction to Python in Environmental Sciences"
+      info: Course leader
+      url: "https://ueapy.github.io/enveast_python_course"
+      location: University of East Anglia, UK
     - time: 2015--Present
       title: Python group coordinator
       info: Managing an unofficial group of Python language users
-      url: "http://ueapy.github.io"
+      url: "https://ueapy.github.io"
       location: University of East Anglia, UK
     - time: Mar 2015
       title: Rapporteur
