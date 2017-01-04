@@ -138,12 +138,17 @@ teaching:
     - time: 2015--Present 
       title: Teaching assistance
       institution: University of East Anglia
-      courses: 
-          - Meteorology
-          - Modelling Environmental Processes
-          - Dynamical Meteorology
-          - Numerical Skills for Scientists
-          - Physical and Chemical Processes in Earth's System
+      courses:
+          - name: Modelling Environmental Processes
+            leader: Ian Renfrew
+          - name: Meteorology
+            leader: Ian Refrew
+          - name: Dynamical Meteorology
+            leader: Adrian Matthews
+          - name: Numerical Skills for Scientists
+            leader: Claire Reeves
+          - name: Physical and Chemical Processes in Earth's System
+            leader: Parvadha Suntharalingam
 
 publications:
     - name: Peer-reviewed

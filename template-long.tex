@@ -172,13 +172,12 @@ $endfor$
 $for(teaching)$
 \note{$teaching.time$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
 $if(teaching.institution)$$teaching.institution$\\$endif$
-$if(teaching.courses)$Courses:
 \begin{itemize}
     $for(teaching.courses)$
-      \item \small{$teaching.courses$}
+      \item \small{$teaching.courses.name$}
+      $if(teaching.courses.leader)$\\Module organiser: $teaching.courses.leader$$endif$
     $endfor$
 \end{itemize}
-$endif$
 $endfor$
 
 \section*{Publications}
