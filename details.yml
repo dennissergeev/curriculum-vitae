@@ -7,7 +7,6 @@ address:
 - Norwich
 - NR47TJ
 - UK
-mobilephone: "+44 7518298358"
 email: d.sergeev@uea.ac.uk
 homepage: dennissergeev.github.io
 github: dennissergeev
@@ -16,10 +15,10 @@ twitter: meteodenny
 # Sections
 
 interests:
-    - Polar lows dynamics
+    - Polar low dynamics
     - Mesoscale meteorology
     - Atmospheric energetics
-    - Atmospheric boundary layers
+    - Atmospheric boundary layer
     - Extraterrestrial meteorology
 
 education:
