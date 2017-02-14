@@ -221,6 +221,15 @@ $for(memberships)$
 \note{$memberships.time$} $memberships.body$\\[0.1cm]
 $endfor$
 
+\section*{Editorial Service}
+\noindent
+$for(service)$
+\note{\small{$service.name$}}
+$for(service.items)$
+$service.items$\\[0.1cm]
+$endfor$
+$endfor$
+
 \section*{Vocational Experience}
 \noindent
 $for(other)$

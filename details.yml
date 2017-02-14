@@ -263,6 +263,11 @@ memberships:
     - time: 2014--Present
       body: Royal Meteorological Society (RMetS)
 
+service:
+    - name: Acted as reviewer for
+      items:
+          - Quarterly Journal of the Royal Meteorological Society
+
 outreach:
     - time: 2015--Present
       name: Contributor to SciSnack blogging platform
@@ -305,7 +310,7 @@ skills:
     - group: Computer Languages
       forte: Python
       skill: Fortran
-    - group: Data analysis and visualizing
+    - group: Data visualisation
       forte: Python
       skill: MATLAB, NCL, Paraview
     - group: Parallel programming
