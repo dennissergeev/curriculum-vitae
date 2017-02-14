@@ -148,38 +148,6 @@ $if(internship.supervisor)$Supervisor: \href{mailto:$internship.superemail$}{$in
 $endfor$
 \vspace{10pt}
 
-\section*{Vocational training}
-\noindent
-$for(training)$
-    $if(training.type)$\subsection*{$training.type$}$endif$
-    $for(training.items)$
-        $if(training.items.time)$\note{$training.items.time$}$endif$
-        $if(training.items.url)$\href{$training.items.url$}{$training.items.name$}$else$\textbf{$training.items.name$}$endif$\\[0.1cm]
-    $endfor$
-$endfor$
-
-\section*{Fieldwork Experience}
-\noindent
-$for(fieldwork)$
-\note{$fieldwork.time$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
-$if(fieldwork.info)$\emph{$fieldwork.info$}\\$endif$
-$if(fieldwork.location)$$fieldwork.location$\\$endif$
-[0.2cm]
-$endfor$
-
-\section*{Teaching Experience}
-\noindent
-$for(teaching)$
-\note{$teaching.time$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
-$if(teaching.institution)$$teaching.institution$\\$endif$
-\begin{itemize}
-    $for(teaching.courses)$
-      \item \small{$teaching.courses.name$}
-      $if(teaching.courses.leader)$\\Module organiser: $teaching.courses.leader$$endif$
-    $endfor$
-\end{itemize}
-$endfor$
-
 \section*{Publications}
 \noindent
 $for(publications)$
@@ -213,6 +181,39 @@ $endfor$
 \noindent
 $for(grants)$
 \note{$grants.time$} \textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
+$endfor$
+
+\section*{Vocational training}
+\noindent
+$for(training)$
+    $if(training.type)$\subsection*{$training.type$}$endif$
+    $for(training.items)$
+        $if(training.items.time)$\note{$training.items.time$}$endif$
+        $if(training.items.url)$\href{$training.items.url$}{$training.items.name$}$else$\textbf{$training.items.name$}$endif$\\
+        $if(training.items.info)$\small{$training.items.info$}\\$endif$
+    $endfor$
+$endfor$
+
+\section*{Fieldwork Experience}
+\noindent
+$for(fieldwork)$
+\note{$fieldwork.time$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
+$if(fieldwork.info)$\emph{$fieldwork.info$}\\$endif$
+$if(fieldwork.location)$$fieldwork.location$\\$endif$
+[0.2cm]
+$endfor$
+
+\section*{Teaching Experience}
+\noindent
+$for(teaching)$
+\note{$teaching.time$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
+$if(teaching.institution)$$teaching.institution$\\$endif$
+\begin{itemize}
+    $for(teaching.courses)$
+      \item \small{$teaching.courses.name$}
+      $if(teaching.courses.leader)$\\Module organiser: $teaching.courses.leader$$endif$
+    $endfor$
+\end{itemize}
 $endfor$
 
 \section*{Membership in Professional Associations} 
