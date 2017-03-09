@@ -110,6 +110,10 @@ training:
         - name: Parallel Programming Using MPI Technologies
           time: INTUIT
           url: "http://www.intuit.ru"
+    - type: First Aid
+      items:
+        - name: Level 1 First Aid for Field Work course
+          time: Feb 2017
 
 fieldwork:
     - time: Aug 2012 
