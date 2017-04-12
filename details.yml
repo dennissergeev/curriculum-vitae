@@ -201,6 +201,11 @@ publications:
 conferences:
     - type: Oral presentations
       items:
+          - title: Polar lows and how background environment can influence their development
+            url: "http://dennissergeev.github.io/ceeda2017"
+            conference: Cambridge Earth Systems Science EnvEast Doctoral Alliance (CEEDA) Symposium
+            date: Apr 2017
+            location: Cambridge, UK
           - title: Structure of the shear-line polar low south of Svalbard
             url: "http://slides.com/denissergeev/deck"
             conference: 13th European Polar Lows Working Group (EPLWG) Workshop
@@ -235,6 +240,12 @@ conferences:
             location: Vienna, Austria
 
 awards:
+    - time: 2017
+      name: Best Presentation Award
+      by: Cambridge Earth Systems Science EnvEast Doctoral Alliance (CEEDA) Symposium
+    - time: 2016
+      name: Travel Bursary
+      by: WWRP/WCRP/Bolin Center Polar Prediction School
     - time: 2015
       name: Travel Award
       by: Dynamics of Atmosphere-Ice-Ocean Interactions in the High Latitudes workshop
