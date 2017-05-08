@@ -154,9 +154,9 @@ teaching:
       courses:
           - name: Modelling Environmental Processes
             leader: Ian Renfrew
-          - name: Meteorology
+          - name: Meteorology I
             leader: Ian Refrew
-          - name: Dynamical Meteorology
+          - name: Meteorology II
             leader: Adrian Matthews
           - name: Numerical Skills for Scientists
             leader: Claire Reeves
