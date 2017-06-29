@@ -63,6 +63,12 @@ training:
         - name: Global Climate Change course
           time: Sep--Dec 2011
           url: "http://gcc.aos.ecu.edu/"
+    - type: EnvEast DTP
+      items:
+        - name: Weather presenting course
+          time: Jun 2017
+        - name: Raspberry Pi course
+          time: Jan 2017
     - type: On-line courses
       items:
         - name: Topics in Polar Low Forecasting
