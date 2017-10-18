@@ -220,6 +220,11 @@ publications:
 conferences:
     - type: Oral presentations
       items:
+          - title: The influence of Svalbard orography and sea ice on polar low development
+            url: "https://figshare.com/articles/The_influence_of_Svalbard_orography_and_sea_ice_on_polar_low_development/5510416"
+            conference: 18th Cyclone Workshop
+            date: Oct 2017
+            location: Sainte-Adèle, Canada
           - title: Polar lows and how background environment can influence their development
             url: "http://dennissergeev.github.io/ceeda2017"
             conference: Cambridge Earth Systems Science EnvEast Doctoral Alliance (CEEDA) Symposium
