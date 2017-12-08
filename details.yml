@@ -116,10 +116,13 @@ training:
         - name: Parallel Programming Using MPI Technologies
           time: INTUIT
           url: "http://www.intuit.ru"
-    - type: First Aid
+    - type: Safety training
       items:
         - name: Level 1 First Aid for Field Work course
           time: Feb 2017
+        - name: Sea Survival course
+          time: Dec 2017
+
 
 fieldwork:
     - time: Aug 2012 
@@ -372,6 +375,6 @@ languages:
 # Settings
 mainfont: Linux Libertine O 
 fontsize: 10pt
-lang: English
+lang: en-GB
 geometry: a4paper, left=50mm, right=35mm, top=21mm, bottom=17mm
 ---

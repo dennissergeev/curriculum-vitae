@@ -3,7 +3,7 @@ srclong = template-long.tex details.yml
 srcshort = template-short.tex details.yml
 outlong = cv-sergeev-long.pdf
 outshort = cv-sergeev-short.pdf
-FLAGS = --smart --latex-engine=xelatex
+FLAGS = -smart --pdf-engine=xelatex
 
 all: $(outlong) $(outshort)
 	convert $(outlong)[0] preview.png
