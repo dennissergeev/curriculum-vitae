@@ -144,7 +144,7 @@ $for(publications)$
 \subsection*{$publications.name$}
 \begin{enumerate}
     $for(publications.items)$
-    \item $if(publications.items.url)$\href{$publications.items.url$}{$endif$$publications.items.authors$. $publications.items.time$. $publications.items.title$. \emph{$publications.items.journal$}, \textbf{$publications.items.volume$}$if(publications.items.issue)$($publications.items.issue$): $endif$$publications.items.pages$$if(publications.items.url)$}$endif$
+    \item $if(publications.items.url)$\href{$publications.items.url$}$endif${$publications.items.authors$. $publications.items.time$. $publications.items.title$.$if(publications.items.journal)$ \emph{$publications.items.journal$}$endif$$if(publications.items.volume)$, \textbf{$publications.items.volume$}$endif$$if(publications.items.issue)$($publications.items.issue$)$endif$$if(publications.items.pages)$: $publications.items.pages$$endif$}
     $endfor$
 \end{enumerate}
 $endfor$

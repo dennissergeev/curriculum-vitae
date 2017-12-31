@@ -147,16 +147,6 @@ fieldwork:
       location: Kaluga region, Russia
 
 teaching:
-    - time: Apr 2017
-      title: Field course teaching assistance
-      institution: University of East Anglia
-      courses:
-          - name: Surface energy fluxes on Slapton Ley
-            leader: Ian Refrew
-          - name: Micrometeorology at Start Point
-            leader: Ian Refrew
-          - name: Dispersion on Slapton Ley
-            leader: Ian Renfrew
     - time: 2015--Present 
       title: Teaching assistance
       institution: University of East Anglia
@@ -171,10 +161,24 @@ teaching:
             leader: Claire Reeves
           - name: Physical and Chemical Processes in Earth's System
             leader: Parvadha Suntharalingam
+    - time: Apr 2017
+      title: Field course teaching assistance
+      institution: University of East Anglia
+      courses:
+          - name: Surface energy fluxes on Slapton Ley
+            leader: Ian Refrew
+          - name: Micrometeorology at Start Point
+            leader: Ian Refrew
+          - name: Dispersion on Slapton Ley
+            leader: Ian Renfrew
 
 publications:
     - name: Peer-reviewed
       items:
+          - authors: Sergeev DE, Renfrew IA, and Spengler T
+            time: 2018
+            title: Modification of polar low development by orography and sea ice
+            journal: in prep.
           - authors: Sergeev DE, Renfrew IA, Spengler T, and Dorling SR
             time: 2017
             title: Structure of a shear-line polar low
@@ -322,6 +326,11 @@ outreach:
               url: "http://www.scisnack.com/2014/12/17/worldwide-weird-weather-words/"
 
 other:
+    - time: Jan 2018
+      title: Training course "Introduction to Python in Environmental Sciences"
+      info: Course instructor
+      url: "https://ueapy.github.io/pythoncourse2018"
+      location: University of East Anglia, UK
     - time: Nov 2016
       title: Training course "Introduction to Python in Environmental Sciences"
       info: Course leader
