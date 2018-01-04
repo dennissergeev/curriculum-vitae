@@ -175,11 +175,16 @@ teaching:
 publications:
     - name: Peer-reviewed
       items:
-          - authors: Sergeev DE, Renfrew IA, and Spengler T
+          - authors: \sergeev, Renfrew IA, and Spengler T
             time: 2018
             title: Modification of polar low development by orography and sea ice
             journal: about to be submitted
-          - authors: Sergeev DE, Renfrew IA, Spengler T, and Dorling SR
+          - authors: Shestakova AA, Toropov PA, Stepanenko VM, \sergeev, and Repina IA
+            time: 2018
+            title: "Observations and modelling of downslope windstorm in Novorossiysk"
+            journal: Boundary-Layer Meteorology
+            pages: submitted
+          - authors: \sergeev, Renfrew IA, Spengler T, and Dorling SR
             time: 2017
             title: Structure of a shear-line polar low
             journal: Quaterly Journal of the Royal Meteorological Society
@@ -187,7 +192,7 @@ publications:
             issue: 702
             pages: 12--26
             url: "http://onlinelibrary.wiley.com/doi/10.1002/qj.2911/full"
-          - authors: Spengler T, Renfrew IA, Terpstra A, Tjernström M, Screen J, Brooks I, Carleton A, Chechin D, Chen L, Doyle J, Esau I, Hezel P, Jung T, Kohyama T,  Lüpkes C, McCusker K, Nygård T, Sergeev DE, Shupe M, Sodemann H, and Vihma T
+          - authors: Spengler T, Renfrew IA, Terpstra A, Tjernström M, Screen J, Brooks I, Carleton A, Chechin D, Chen L, Doyle J, Esau I, Hezel P, Jung T, Kohyama T,  Lüpkes C, McCusker K, Nygård T, \sergeev, Shupe M, Sodemann H, and Vihma T
             time: 2016
             title: High Latitude Dynamics of Atmosphere-Ice-Ocean Interactions
             journal: Bulletin of American Meteorological Society
@@ -195,7 +200,7 @@ publications:
             issue: 9
             pages: ES179--ES182
             url: "http://journals.ametsoc.org/doi/full/10.1175/BAMS-D-15-00302.1"
-          - authors: Eliseev AV, Sergeev DE
+          - authors: Eliseev AV, \sergeev
             time: 2014
             title: Impact of Subgrid Scale Vegetation Heterogeneity on the Simulation of Carbon Cycle Characteristics
             journal: Izvestiya, Atmospheric and Oceanic Physics
@@ -205,19 +210,19 @@ publications:
             url: "https://link.springer.com/article/10.1134/S0001433814020030"
     - name: Proceedings
       items:
-          - authors: Sergeev DE, Stepanenko VM
+          - authors: \sergeev, Stepanenko VM
             time: 2013
             title: Numerical modelling of polar mesocyclones generation mechanisms
             journal: International Conference "Turbulence, atmosphere and climate dynamics" dedicated to A.M. Obukhov
             volume: Selected papers
             pages: 168--170
-          - authors: Sergeev DE, Zamyatina MY, Stepanenko VM
+          - authors: \sergeev, Zamyatina MY, Stepanenko VM
             time: 2013
             title: Thermal regime features of Kronotsky lake (in Russian)
             journal: Kronotsky State Natural Biosphere Reserve Proceedings
             volume: 3
             pages: 29--41
-          - authors: Sergeev DE, Stepanenko VM
+          - authors: \sergeev, Stepanenko VM
             time: 2012
             title: Parameterization of mesoscale sensible heat and methane fluxes in the region of Western Siberia
             journal: International Conference and Early Career Scientists School on Environmental Observations, modelling and Information Systems (ENVIROMIS-2012)
