@@ -381,9 +381,15 @@ languages:
     - language: French
       proficiency: Basic
 
+referees:
+    - name: Prof. Ian Renfrew
+      email: i.renfrew@uea.ac.uk
+    - name: Prof. Thomas Spengler
+      email: thomas.spengler@uib.no
+
 # Settings
-mainfont: Linux Libertine O 
+mainfont: Sawasdee
 fontsize: 10pt
 lang: en-GB
-geometry: a4paper, left=50mm, right=35mm, top=21mm, bottom=17mm
+geometry: a4paper, left=50mm, right=25mm, top=15mm, bottom=15mm
 ---

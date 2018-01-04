@@ -86,7 +86,8 @@ $endif$
 % DOCUMENT
 %--------------------------------
 \begin{document}
-\flushright{\small \texttt{Updated: \mydate\today}\flushleft
+\small
+\flushright{Updated: \mydate\today\flushleft
 
 {\LARGE $name$}\\[.2cm]
 
@@ -165,7 +166,7 @@ $for(conferences)$
 \subsection*{$conferences.type$}
 $for(conferences.items)$
 \note{$conferences.items.date$}
-$if(conferences.items.url)$\href{$conferences.items.url$}{$conferences.items.title$}$else$\textbf{$conferences.items.title$}$endif$\\
+\textbf{$if(conferences.items.url)$\href{$conferences.items.url$}$endif${$conferences.items.title$}}\\
 \emph{$conferences.items.conference$}\\$conferences.items.location$\\[0.2cm]
 $endfor$
 $endfor$
@@ -173,14 +174,14 @@ $endfor$
 \section*{Awards and Scholarships}
 \noindent
 $for(awards)$
-\note{$awards.time$} \textbf{$awards.name$}\\
+\note{$awards.time$}\textbf{$awards.name$}\\
 $if(awards.by)$$awards.by$\\$endif$
 $endfor$
 
 \section*{Grants}
 \noindent
 $for(grants)$
-\note{$grants.time$} \textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
+\note{$grants.time$}\textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
 $endfor$
 
 \section*{Vocational training}
@@ -189,7 +190,7 @@ $for(training)$
     $if(training.type)$\subsection*{$training.type$}$endif$
     $for(training.items)$
         $if(training.items.time)$\note{$training.items.time$}$endif$
-        $if(training.items.url)$\href{$training.items.url$}{$training.items.name$}$else$\textbf{$training.items.name$}$endif$\\
+        $if(training.items.url)$\href{$training.items.url$}$endif${$training.items.name$}\\
         $if(training.items.info)$\small{$training.items.info$}\\$endif$
     $endfor$
 $endfor$
@@ -219,7 +220,7 @@ $endfor$
 \section*{Membership in Professional Associations} 
 \noindent
 $for(memberships)$
-\note{$memberships.time$} $memberships.body$\\[0.1cm]
+\note{$memberships.time$}$memberships.body$\\[0.1cm]
 $endfor$
 
 \section*{Editorial Service}
@@ -234,7 +235,7 @@ $endfor$
 \section*{Vocational Experience}
 \noindent
 $for(other)$
-\note{$other.time$}$if(other.url)$\href{$other.url$}{$other.title$}$else$\textbf{$other.title$}$endif$\\
+\note{$other.time$}\textbf{$if(other.url)$\href{$other.url$}$endif${$other.title$}}\\
 $if(other.info)$\emph{$other.info$}\\$endif$
 $if(other.location)$$other.location$\\$endif$
 [0.2cm]
@@ -243,7 +244,7 @@ $endfor$
 \section*{Outreach} 
 \noindent
 $for(outreach)$
-\note{$outreach.time$} \textbf{$outreach.name$}\\[0.1cm]
+\note{$outreach.time$}\textbf{$outreach.name$}\\[0.1cm]
 \begin{itemize}
 $for(outreach.items)$
     \item \href{$outreach.items.url$}{$outreach.items.title$}
@@ -252,14 +253,21 @@ $endfor$
 $endfor$
 
 \section*{Computer Skills}
+\noindent
 $for(skills)$
 \note{$skills.group$}$if(skills.forte)$\textbf{$skills.forte$},$endif$
 $skills.skill$\\
 $endfor$
 
 \section*{Languages}
+\noindent
 $for(languages)$
-\note{$languages.language$} $languages.proficiency$\\
+\note{$languages.language$}$languages.proficiency$\\
 $endfor$
 
+\section*{References}
+\noindent
+$for(referees)$
+\textbf{$referees.name$}\\\href{mailto:$referees.email$}{$referees.email$}\\[0.1cm]
+$endfor$
 \end{document}
