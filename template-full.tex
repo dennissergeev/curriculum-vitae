@@ -19,6 +19,9 @@
 % Uncomment to suppress page numbers
 % \pagenumbering{gobble}
 
+% Numbering
+\usepackage{etaremune}
+
 % LANGUAGE
 %--------------------------------
 % Set the main language
@@ -134,9 +137,10 @@ $for(education)$
 \note{$education.time$}$if(education.degree)$$education.degree$\\$endif$
 $if(education.distinct)$$education.distinct$\\$endif$
 $if(education.thesis)$Thesis title: \textbf{$education.thesis$}\\$endif$
-$if(education.department)$\emph{$education.department$}\\$endif$
+% $if(education.department)$\emph{$education.department$}\\$endif$
 $if(education.institution)$\emph{$education.institution$}\\$endif$
-$if(education.supervisor)$Supervisor: \href{mailto:$education.superemail$}{$education.supervisor$}\\$endif$[0.2cm]
+$if(education.location)$$education.location$\\$endif$
+$if(education.supervisor)$Supervisor: $education.supervisor$\\$endif$[0.2cm]
 $endfor$
 \vspace{10pt}
 
@@ -146,7 +150,7 @@ $for(internship)$
 \note{$internship.time$}$if(internship.institution)$\emph{$internship.institution$}\\$endif$
 $if(internship.department)$$internship.department$\\$endif$
 $if(internship.location)$$internship.location$\\$endif$
-$if(internship.supervisor)$Supervisor: \href{mailto:$internship.superemail$}{$internship.supervisor$}\\$endif$[0.2cm]
+$if(internship.supervisor)$Supervisor: $internship.supervisor$\\$endif$[0.2cm]
 $endfor$
 \vspace{10pt}
 
@@ -154,11 +158,11 @@ $endfor$
 \noindent
 $for(publications)$
 \subsection*{$publications.name$}
-\begin{enumerate}
+\begin{etaremune}
     $for(publications.items)$
     \item $if(publications.items.url)$\href{$publications.items.url$}$endif${$publications.items.authors$. $publications.items.time$. $publications.items.title$.$if(publications.items.journal)$ \emph{$publications.items.journal$}$endif$$if(publications.items.volume)$, \textbf{$publications.items.volume$}$endif$$if(publications.items.issue)$($publications.items.issue$)$endif$$if(publications.items.pages)$: $publications.items.pages$$endif$}
     $endfor$
-\end{enumerate}
+\end{etaremune}
 $endfor$
 
 \section*{Conferences and Workshops}
@@ -168,7 +172,7 @@ $for(conferences)$
 $for(conferences.items)$
 \note{$conferences.items.date$}
 \textbf{$if(conferences.items.url)$\href{$conferences.items.url$}$endif${$conferences.items.title$}}\\
-\emph{$conferences.items.conference$}\\$conferences.items.location$\\[0.2cm]
+\emph{$conferences.items.conference$} ($conferences.items.location$)\\[0.2cm]
 $endfor$
 $endfor$
 
@@ -183,6 +187,19 @@ $endfor$
 \noindent
 $for(grants)$
 \note{$grants.time$}\textbf{$grants.title$}\\$grants.institution$\\[0.2cm]
+$endfor$
+
+\section*{Computer Skills}
+\noindent
+$for(skills)$
+\note{$skills.group$}$if(skills.forte)$\textbf{$skills.forte$},$endif$
+$skills.skill$\\
+$endfor$
+
+\section*{Languages}
+\noindent
+$for(languages)$
+\note{$languages.language$}$languages.proficiency$\\
 $endfor$
 
 \section*{Vocational training}
@@ -200,8 +217,8 @@ $endfor$
 \noindent
 $for(fieldwork)$
 \note{$fieldwork.time$}$if(fieldwork.title)$\textbf{$fieldwork.title$}\\$endif$
-$if(fieldwork.info)$\emph{$fieldwork.info$}\\$endif$
-$if(fieldwork.location)$$fieldwork.location$\\$endif$
+$if(fieldwork.info)$\emph{$fieldwork.info$} $endif$
+$if(fieldwork.location)$($fieldwork.location$)\\$endif$
 [0.2cm]
 $endfor$
 
@@ -210,12 +227,7 @@ $endfor$
 $for(teaching)$
 \note{$teaching.time$}$if(teaching.title)$\textbf{$teaching.title$}\\$endif$
 $if(teaching.institution)$$teaching.institution$\\$endif$
-\begin{itemize}
-    $for(teaching.courses)$
-      \item \small{$teaching.courses.name$}
-      $if(teaching.courses.leader)$\\Module organiser: $teaching.courses.leader$$endif$
-    $endfor$
-\end{itemize}
+$if(teaching.courses)$$teaching.courses$\\$endif$
 $endfor$
 
 \section*{Membership in Professional Associations} 
@@ -251,19 +263,6 @@ $for(outreach.items)$
     \item \href{$outreach.items.url$}{$outreach.items.title$}
 $endfor$
 \end{itemize}
-$endfor$
-
-\section*{Computer Skills}
-\noindent
-$for(skills)$
-\note{$skills.group$}$if(skills.forte)$\textbf{$skills.forte$},$endif$
-$skills.skill$\\
-$endfor$
-
-\section*{Languages}
-\noindent
-$for(languages)$
-\note{$languages.language$}$languages.proficiency$\\
 $endfor$
 
 \section*{References}

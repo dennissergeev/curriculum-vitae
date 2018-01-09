@@ -18,39 +18,35 @@ interests:
     - Cyclone dynamics
     - Mesoscale meteorology
     - Atmospheric energetics
-    - Atmospheric boundary layer
+    - Boundary layer meteorology
     - Extraterrestrial meteorology
 
 education:
     - time: 2014--Present
       degree: PhD in Meteorology
       thesis: Dynamics and Predictability of Polar Lows
-      department: School of Environmental Sciences
       institution: University of East Anglia
-      supervisor: Ian A. Renfrew
-      superemail: i.renfrew@uea.ac.uk
+      location: Norwich, United Kingdom
+      supervisor: Prof. Ian A. Renfrew
     - time: 2009--2014
       degree: Specialist Diploma in Meteorology
       thesis: Idealised numerical modelling of polar mesocyclone dynamics
       distinct: With Honours
-      department: Faculty of Geography
       institution: Lomonosov Moscow State University
-      supervisor: Victor Stepanenko
-      superemail: stepanen@srcc.msu.ru
+      location: Moscow, Russia
+      supervisor: Dr. Victor Stepanenko
 
 internship:
     - time: Oct 2013
       department: Geophysical Institute
       institution: University of Bergen
       location: Bergen, Norway
-      supervisor: Thomas Spengler
-      superemail: thomas.spengler@gfi.uib.no
+      supervisor: Prof. Thomas Spengler
     - time: Jul 2012
       department: Laboratory of Climate Theory
       institution: A.M. Obukhov Institute of Atmospheric Physics
       location: Moscow, Russia
-      supervisor: Alexey Eliseev
-      superemail: eliseev@ifaran.ru
+      supervisor: Dr. Alexey Eliseev
 
 training:
     - items:
@@ -69,53 +65,6 @@ training:
           time: Jun 2017
         - name: Raspberry Pi course
           time: Jan 2017
-    - type: On-line courses
-      items:
-        - name: Topics in Polar Low Forecasting
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: Arctic Meteorology and Oceanography
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: Skew-T Mastery
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: "Principles of Convection: Buoyancy and CAPE"
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: Using Scatterometer Wind and Altimeter Wave Estimates in Marine Forecasting
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: "Polar Satellite Products for the Operational Forecaster: Microwave Analysis of Tropical Cyclones"
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: How Mesoscale Models Work
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: Jet Streams
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: Downscaling of NWP Data
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: "Satellite Feature Identification: Cyclogenesis"
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: The Balancing Act of Geostrophic Adjustment
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: Introduction to Statistics in Climatology
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: Monitoring the Climate System with Satellites
-          time: MetEd
-          url: "https://www.meted.ucar.edu"
-        - name: High Performance Scientific Computing
-          time: Coursera
-          url: "https://www.coursera.org/course/scicomp"
-        - name: Parallel Programming Using MPI Technologies
-          time: INTUIT
-          url: "http://www.intuit.ru"
     - type: Safety training
       items:
         - name: Level 1 First Aid for Field Work course
@@ -147,30 +96,13 @@ fieldwork:
       location: Kaluga region, Russia
 
 teaching:
-    - time: 2015--Present 
+    - time: 2015--2017 
       title: Teaching assistance
-      institution: University of East Anglia
-      courses:
-          - name: Modelling Environmental Processes
-            leader: Ian Renfrew
-          - name: Meteorology I
-            leader: Ian Refrew
-          - name: Meteorology II
-            leader: Adrian Matthews
-          - name: Numerical Skills for Scientists
-            leader: Claire Reeves
-          - name: Physical and Chemical Processes in Earth's System
-            leader: Parvadha Suntharalingam
+      institution: University of East Anglia (Norwich, UK)
+      courses: Modelling Environmental Processes, Meteorology, Numerical Skills for Scientists, Physical and Chemical Processes in Earth's System
     - time: Apr 2017
       title: Field course teaching assistance
-      institution: University of East Anglia
-      courses:
-          - name: Surface energy fluxes on Slapton Ley
-            leader: Ian Refrew
-          - name: Micrometeorology at Start Point
-            leader: Ian Refrew
-          - name: Dispersion on Slapton Ley
-            leader: Ian Renfrew
+      institution: University of East Anglia (Norwich, UK)
 
 publications:
     - name: Peer-reviewed
@@ -239,7 +171,7 @@ conferences:
             location: Sainte-Adèle, Canada
           - title: Polar lows and how background environment can influence their development
             url: "http://dennissergeev.github.io/ceeda2017"
-            conference: Cambridge Earth Systems Science EnvEast Doctoral Alliance (CEEDA) Symposium
+            conference: Cambridge Earth Systems Science EnvEast Doctoral Alliance Symposium
             date: Apr 2017
             location: Cambridge, UK
           - title: Structure of the shear-line polar low south of Svalbard
@@ -335,17 +267,17 @@ other:
       title: Training course "Introduction to Python in Environmental Sciences"
       info: Course instructor
       url: "https://ueapy.github.io/pythoncourse2018"
-      location: University of East Anglia, UK
+      location: University of East Anglia (Norwich, UK)
     - time: Nov 2016
       title: Training course "Introduction to Python in Environmental Sciences"
       info: Course leader
       url: "https://ueapy.github.io/enveast_python_course"
-      location: University of East Anglia, UK
+      location: University of East Anglia (Norwich, UK)
     - time: 2015--Present
-      title: Python group coordinator
-      info: Managing an unofficial group of Python language users
+      title: Python group leader
+      info: Founder and leader of the Python programming language users group
       url: "https://ueapy.github.io"
-      location: University of East Anglia, UK
+      location: University of East Anglia (Norwich, UK)
     - time: Mar 2015
       title: Rapporteur
       info: Dynamics of Atmosphere-Ice-Ocean Interactions in the High-Latitudes workshop
