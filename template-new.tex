@@ -1,0 +1,137 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[]{deedy-resume-openfont}
+%\usepackage{fancyhdr}
+% 
+%\pagestyle{fancy}
+%\fancyhf{}
+
+% Margins
+%\usepackage[$geometry$]{geometry} 
+%\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
+
+% Set the main language
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% PDF SETUP
+%--------------------------------
+\usepackage{hyperref}
+\hypersetup
+{
+  pdfauthor={$name$},
+  pdfsubject={$name$'s CV},
+  pdftitle={$name$'s CV},
+}
+% personal data
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LAST UPDATED DATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{$firstname$}{$lastname$}{ \urlstyle{same}
+$if(mobilephone)$
+~~\mobilephonesymbol$mobilephone$
+$endif$
+$if(email)$
+~~\emailsymbol\href{mailto:$email$}{$email$}
+$endif$
+$if(homepage)$
+~~\homepagesymbol\href{http://$homepage$}{$homepage$}
+$endif$
+$if(github)$
+~~\githubsymbol\href{http://github.com/$github$}{$github$}
+$endif$
+$if(twitter)$
+~~\twittersymbol\href{http://twitter.com/$twitter$}{$twitter$}
+$endif$
+$if(address)$
+\\
+$address$ 
+$endif$
+}
+\begin{minipage}[t]{\textwidth}
+My name is Denis Sergeev and I am doing a PhD in Meteorology at the University of East Anglia, UK. My research aims at understanding the dynamics of polar mesoscale cyclones, as well as their representation in modern numerical weather prediction systems.
+\end{minipage}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+$for(education)$
+\cventry{$education.time$}%
+{$education.degree$}%
+{$if(education.distinct)$$education.distinct$$endif$}%
+{$if(education.institution)$\emph{$education.institution$}$endif$}%
+{$if(education.location)$$education.location$$endif$}%
+{$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$}%
+{$if(education.supervisor)$Supervisor: $education.supervisor$$endif$}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Internships
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Internships}
+$for(education)$
+\cventry{$education.time$}%
+{$education.degree$}%
+{$if(education.distinct)$$education.distinct$$endif$}%
+{$if(education.institution)$\emph{$education.institution$}$endif$}%
+{$if(education.location)$$education.location$$endif$}%
+{$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$}%
+{$if(education.supervisor)$Supervisor: $education.supervisor$$endif$}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Skills}
+%\subsection{Programming}
+%\location{Over 5000 lines:}
+%Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+%OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+%\location{Over 1000 lines:}
+%C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+%\location{Familiar:}
+%AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+%\sectionsep
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Research}
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Researcher}
+%\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+%\sectionsep
+%
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+%\end{minipage} 
+\end{document}

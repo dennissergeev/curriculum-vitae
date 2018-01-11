@@ -1,12 +1,8 @@
 ---
 # Personal details
-name: Denis Sergeev
-address:
-- School of Environmental Sciences
-- University of East Anglia
-- Norwich
-- NR47TJ
-- UK
+firstname: Denis
+lastname: Sergeev
+address: School of Environmental Sciences | University of East Anglia | Norwich | United Kingdom | NR47TJ 
 email: d.sergeev@uea.ac.uk
 homepage: dennissergeev.github.io
 github: dennissergeev
@@ -328,5 +324,5 @@ referees:
 mainfont: Sawasdee
 fontsize: 10pt
 lang: en-GB
-geometry: a4paper, left=50mm, right=25mm, top=15mm, bottom=15mm
+geometry: a4paper, left=10mm, right=10mm, top=15mm, bottom=15mm
 ---
