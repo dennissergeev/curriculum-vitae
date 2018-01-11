@@ -65,29 +65,38 @@ Last Updated on \mydate\today
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\sectionsep}{\vspace{8pt}}
 
+% Text separator
+\newcommand{\customsep}{~\textbullet{}~}
+
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path=fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
-\titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\titleformat{\subsection}{\raggedright
+\color{subheadings}\fontspec[Path=fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path=fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{11pt}\selectfont {#1} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
+\color{headings}\raggedright\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
+
+% multi columns
+\usepackage{multicol}
+\newcommand{\doublecol}[1]{%
+\begin{multicols}{2}#1\end{multicols}%
+}
 
 % Symbols from font-awesome
 \usepackage{fontawesome}
@@ -106,9 +115,9 @@ Last Updated on \mydate\today
     \newlength{#1}\fi%
   \setlength{#1}{0pt}}
 
-\@initializelength{\hintscolumnwidth}     \setlength{\hintscolumnwidth}{0.175\textwidth}
+\@initializelength{\hintscolumnwidth}     \setlength{\hintscolumnwidth}{0.125\textwidth}
 \@initializelength{\separatorcolumnwidth} \setlength{\separatorcolumnwidth}{0.025\textwidth}
-\@initializelength{\maincolumnwidth}      \setlength{\maincolumnwidth}{0.8\textwidth}
+\@initializelength{\maincolumnwidth}      \setlength{\maincolumnwidth}{0.85\textwidth}
 %% commands
 %\newcommand*{\recomputecvbodylengths}{%
 %  % body lengths         
@@ -134,7 +143,7 @@ Last Updated on \mydate\today
   \cvitem[#1]{#2}{%
     {\bfseries#3}%
     \ifthenelse{\equal{#4}{}}{}{ | {\slshape#4}}%
-    \ifthenelse{\equal{#5}{}}{}{\newline{} #5}%
+    \ifthenelse{\equal{#5}{}}{}{ | #5}%
     \ifthenelse{\equal{#6}{}}{}{ | #6}%
     \strut%
     \ifx&#7&%

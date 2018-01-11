@@ -27,11 +27,13 @@ $endif$
   pdftitle={$name$'s CV},
 }
 % personal data
-\begin{document}
+\newcommand{\sergeev}{\textbf{Sergeev DE}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LAST UPDATED DATE
+%     Begin document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
 \lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,9 +65,9 @@ My name is Denis Sergeev and I am doing a PhD in Meteorology at the University o
 \end{minipage}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 $for(education)$
 \cventry{$education.time$}%
@@ -74,55 +76,110 @@ $for(education)$
 {$if(education.institution)$\emph{$education.institution$}$endif$}%
 {$if(education.location)$$education.location$$endif$}%
 {$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$}%
-{$if(education.supervisor)$Supervisor: $education.supervisor$$endif$}%
+{$if(education.supervisor)$Supervisor: $education.supervisor$$endif$}
 $endfor$
 \sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     Internships
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERNSHIPS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Internships}
-$for(education)$
-\cventry{$education.time$}%
-{$education.degree$}%
-{$if(education.distinct)$$education.distinct$$endif$}%
-{$if(education.institution)$\emph{$education.institution$}$endif$}%
-{$if(education.location)$$education.location$$endif$}%
-{$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$}%
-{$if(education.supervisor)$Supervisor: $education.supervisor$$endif$}%
+$for(internship)$
+\cventry{$internship.time$}%
+{$internship.title$}%
+{$if(internship.department)$$internship.department$$endif$}%
+{}%
+{$if(internship.institution)$\emph{$internship.institution$}$endif$}%
+{$if(internship.location)$$internship.location$$endif$}%
+{$if(internship.supervisor)$Supervisor: $internship.supervisor$$endif$}%
+{}%
 $endfor$
 \sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\section{Skills}
-%\subsection{Programming}
-%\location{Over 5000 lines:}
-%Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-%OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-%\location{Over 1000 lines:}
-%C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-%\location{Familiar:}
-%AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
-%\sectionsep
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\section{Research}
-%\runsubsection{Cornell Robot Learning Lab}
-%\descript{| Researcher}
-%\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
-%\sectionsep
-%
-%\runsubsection{Cornell Phonetics Lab}
-%\descript{| Head Undergraduate Researcher}
-%\location{Mar 2012 – May 2013 | Ithaca, NY}
-%Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
-%\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+$for(publications)$
+\subsection{$publications.name$}
+\begin{etaremune}
+    $for(publications.items)$
+        \item $if(publications.items.url)$\href{$publications.items.url$}$endif${%
+              $publications.items.authors$. $publications.items.time$. $publications.items.title$.%
+              $if(publications.items.journal)$~~\emph{$publications.items.journal$}$endif$%
+              $if(publications.items.volume)$, \textbf{$publications.items.volume$}$endif$%
+              $if(publications.items.issue)$($publications.items.issue$)$endif$%
+              $if(publications.items.pages)$: $publications.items.pages$$endif$}
+    $endfor$
+\end{etaremune}
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CONFERENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conferences}
+$for(conferences)$
+\subsection{$conferences.type$}
+$for(conferences.items)$
+\cventry{$conferences.items.date$}%
+{$if(conferences.items.url)$\href{$conferences.items.url$}$endif${$conferences.items.title$}}%
+{$conferences.items.conference$}%
+{$conferences.items.location$}%
+{}%
+{}%
+{}%
+$endfor$
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards and Scholarships}
+$for(awards)$
+\cventry{$awards.time$}%
+{$awards.name$}%
+{$if(awards.by)$$awards.by$$endif$}%
+{}%
+{}%
+{}%
+{}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     GRANTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grants}
+$for(grants)$
+\cventry{$grants.time$}%
+{$grants.title$}%
+{$if(grants.institution)$$grants.institution$$endif$}%
+{}%
+{}%
+{}%
+{}%
+{}%
+$endfor$
+\sectionsep
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Computer Skills}
+\newcounter{totcnt}
+\newcounter{skillcount}
+\doublecol{%
+$for(skills)$
+\descript{$skills.group$: }%
+$if(skills.forte)$\emph{$skills.forte$}\customsep$endif$%
+\setcounter{totcnt}{0}%
+\setcounter{skillcount}{0}%
+$for(skills.skill)$\stepcounter{totcnt}$endfor$%
+$for(skills.skill)$
+\stepcounter{skillcount}%
+$skills.skill$\ifnum\value{skillcount}<\value{totcnt}\customsep\fi%
+$endfor$
+\\
+$endfor$
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -34,11 +34,13 @@ education:
 
 internship:
     - time: Oct 2013
+      title: Visiting student
       department: Geophysical Institute
       institution: University of Bergen
       location: Bergen, Norway
       supervisor: Prof. Thomas Spengler
     - time: Jul 2012
+      title: Junior Researcher
       department: Laboratory of Climate Theory
       institution: A.M. Obukhov Institute of Atmospheric Physics
       location: Moscow, Russia
@@ -106,7 +108,8 @@ publications:
           - authors: \sergeev, Renfrew IA, and Spengler T
             time: 2018
             title: Modification of polar low development by orography and sea ice
-            journal: about to be submitted
+            journal: Monthly Weather Review
+            pages: about to be submitted
           - authors: Shestakova AA, Toropov PA, Stepanenko VM, \sergeev, and Repina IA
             time: 2018
             title: "Observations and modelling of downslope windstorm in Novorossiysk"
@@ -221,7 +224,6 @@ awards:
       by: European Geosciences Union (EGU) General Assembly
     - time: 2014
       name: Russian Academy of Sciences Young Scientist Medal
-      by: In the area of oceanology, atmospheric physics and geography
     - time: 2009
       name: 3rd place in the All-Russian Geography Olympiad
     - time: 2009
@@ -290,21 +292,35 @@ other:
 skills:
     - group: Operating systems
       forte: Linux
-      skill: Unix, Windows
+      skill:
+          - Unix
+          - Windows
     - group: Computer Languages
       forte: Python
-      skill: Fortran
+      skill:
+          - Fortran
     - group: Data visualisation
       forte: Python
-      skill: MATLAB, NCL, Paraview
+      skill:
+          - MATLAB
+          - NCL
+          - Paraview
     - group: Parallel programming
-      skill: MPI, OpenMP
+      skill:
+          - MPI
+          - OpenMP
     - group: Version control systems
-      skill: Git, Subversion
+      skill:
+          - Git
+          - Subversion
     - group: Document preparation
-      skill: LaTeX, Markdown
+      skill:
+          - LaTeX
+          - Markdown
     - group: Web development
-      skill: HTML, CSS
+      skill: 
+          - HTML
+          - CSS
 
 languages:
     - language: Russian

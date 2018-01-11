@@ -12,7 +12,7 @@ old: $(outold)
 	@xdg-open $(outold) > /dev/null 2>&1
 
 new: $(outnew)
-	#@xdg-open $(outnew) > /dev/null 2>&1
+	@#xdg-open $(outnew) > /dev/null 2>&1
 
 preview: $(outold)
 	convert $(outold)[0] preview.png
