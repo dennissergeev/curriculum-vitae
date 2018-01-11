@@ -180,6 +180,44 @@ $endfor$
 \\
 $endfor$
 }
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LANGUAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Languages}
+$for(languages)$
+\descript{$languages.language$: }$languages.proficiency$\\
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    TRAINING 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vocational training}
+$for(training)$
+    $if(training.type)$\subsection{$training.type$}$endif$
+    $for(training.items)$
+        \cventry{$if(training.items.time)$$training.items.time$$endif$}%
+        {$if(training.items.url)$\href{$training.items.url$}$endif${$training.items.name$}}%
+        {$if(training.items.info)$\small{$training.items.info$}\\$endif$}%
+        {}%
+        {}%
+        {}%
+        {}%
+        {}%
+    $endfor$
+$endfor$
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     REFERENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{References}
+\doublecol{%
+$for(referees)$
+\descript{$referees.name$}\\\href{mailto:$referees.email$}{$referees.email$}\\
+$endfor$
+}
+\sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

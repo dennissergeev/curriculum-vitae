@@ -61,8 +61,8 @@ Last Updated on \mydate\today
 
 % Section seperators 
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{0pt} 
-\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\titlespacing{\section}{0pt}{3pt}{1pt} 
+\titlespacing{\subsection}{0pt}{2pt}{1pt}
 \newcommand{\sectionsep}{\vspace{8pt}}
 
 % Text separator
@@ -74,10 +74,10 @@ Last Updated on \mydate\today
 
 % Subeadings command
 \titleformat{\subsection}{\raggedright
-\color{subheadings}\fontspec[Path=fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path=fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path=fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
