@@ -207,7 +207,21 @@ $for(training)$
     $endfor$
 $endfor$
 \sectionsep
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    FIELDWORK 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fieldwork experience}
+$for(fieldwork)$
+    \cventry{$if(fieldwork.time)$$fieldwork.time$$endif$}%
+{$if(fieldwork.title)$$fieldwork.title$$endif$}%
+{$if(fieldwork.info)$$fieldwork.info$$endif$}%
+{$if(fieldwork.location)$$fieldwork.location$$endif$}%
+{}%
+{}%
+{}%
+{}%
+$endfor$
+\sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     REFERENCES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
