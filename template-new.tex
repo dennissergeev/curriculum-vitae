@@ -22,9 +22,9 @@ $endif$
 \usepackage{hyperref}
 \hypersetup
 {
-  pdfauthor={$name$},
-  pdfsubject={$name$'s CV},
-  pdftitle={$name$'s CV},
+  pdfauthor={$firstname$ $lastname$},
+  pdfsubject={$firstname$ $lastname$'s CV},
+  pdftitle={$firstname$ $lastname$'s CV},
 }
 % personal data
 \newcommand{\sergeev}{\textbf{Sergeev DE}}
@@ -223,12 +223,97 @@ $for(fieldwork)$
 $endfor$
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TEACHING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching experience}
+$for(teaching)$
+    \cventry{$if(teaching.time)$$teaching.time$$endif$}%
+{$if(teaching.title)$$if(teaching.url)$\href{$teaching.url$}$endif${$teaching.title$}$endif$}%
+{$if(teaching.info)$$teaching.info$$endif$}%
+{$if(teaching.institution)$$teaching.institution$$endif$}%
+{$if(teaching.location)$$teaching.location$$endif$}%
+{}%
+{}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MEMBERSHIPS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Membership in Professional Associations} 
+$for(memberships)$
+\cventry{$memberships.time$}%
+{$memberships.body$}%
+{}%
+{}%
+{}%
+{}%
+{}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDITORIAL SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Editorial Service} 
+$for(service)$
+\cventry{$service.name$}%
+{}%
+{}%
+{}%
+{}%
+{}%
+{%
+$for(service.items)$
+$service.items$\newline{}
+$endfor$
+}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OUTREACH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Outreach} 
+$for(outreach)$
+\cventry{$outreach.time$}%
+{$outreach.name$}%
+{}%
+{}%
+{}%
+{}%
+{%
+{\small%
+\begin{itemize}
+$for(outreach.items)$
+\item \href{$outreach.items.url$}{$outreach.items.title$}
+$endfor$
+\end{itemize}
+}
+}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vocational experience}
+$for(other)$
+    \cventry{$if(other.time)$$other.time$$endif$}%
+{$if(other.title)$$if(other.url)$\href{$other.url$}$endif${$other.title$}$endif$}%
+{$if(other.info)$$other.info$$endif$}%
+{$if(other.institution)$$other.institution$$endif$}%
+{}%
+{}%
+{}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     REFERENCES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{References}
 \doublecol{%
 $for(referees)$
-\descript{$referees.name$}\\\href{mailto:$referees.email$}{$referees.email$}\\
+\descript{$referees.name$}\\$referees.info$\\\href{mailto:$referees.email$}{$referees.email$}\\
 $endfor$
 }
 \sectionsep

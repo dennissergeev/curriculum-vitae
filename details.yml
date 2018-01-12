@@ -94,13 +94,27 @@ fieldwork:
       location: Kaluga region, Russia
 
 teaching:
+    - time: Jan 2018
+      title: Training course "Introduction to Python in Environmental Sciences"
+      info: Course instructor
+      url: "https://ueapy.github.io/pythoncourse2018"
+      institution: University of East Anglia
+      location: Norwich, UK
     - time: 2015--2017 
       title: Teaching assistance
-      institution: University of East Anglia (Norwich, UK)
-      courses: Modelling Environmental Processes, Meteorology, Numerical Skills for Scientists, Physical and Chemical Processes in Earth's System
+      institution: University of East Anglia
+      location: Norwich, UK
+      info: Modelling Environmental Processes, Meteorology, Numerical Skills for Scientists, Physical and Chemical Processes in Earth's System
     - time: Apr 2017
       title: Field course teaching assistance
-      institution: University of East Anglia (Norwich, UK)
+      institution: University of East Anglia
+      location: Slapton, UK
+    - time: Nov 2016
+      title: Training course "Introduction to Python in Environmental Sciences"
+      info: Course leader
+      url: "https://ueapy.github.io/enveast_python_course"
+      institution: University of East Anglia
+      location: Norwich, UK
 
 publications:
     - name: Peer-reviewed
@@ -261,16 +275,6 @@ outreach:
               url: "http://www.scisnack.com/2014/12/17/worldwide-weird-weather-words/"
 
 other:
-    - time: Jan 2018
-      title: Training course "Introduction to Python in Environmental Sciences"
-      info: Course instructor
-      url: "https://ueapy.github.io/pythoncourse2018"
-      location: University of East Anglia (Norwich, UK)
-    - time: Nov 2016
-      title: Training course "Introduction to Python in Environmental Sciences"
-      info: Course leader
-      url: "https://ueapy.github.io/enveast_python_course"
-      location: University of East Anglia (Norwich, UK)
     - time: 2015--Present
       title: Python group leader
       info: Founder and leader of the Python programming language users group
@@ -332,9 +336,11 @@ languages:
 
 referees:
     - name: Prof. Ian Renfrew
+      info: Primary supervisor
       email: i.renfrew@uea.ac.uk
     - name: Prof. Thomas Spengler
       email: thomas.spengler@uib.no
+      info: Co-supervisor
 
 # Settings
 mainfont: Sawasdee

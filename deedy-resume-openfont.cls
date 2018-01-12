@@ -63,7 +63,7 @@ Last Updated on \mydate\today
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{3pt}{1pt} 
 \titlespacing{\subsection}{0pt}{2pt}{1pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\newcommand{\sectionsep}{\vspace{5pt}}
 
 % Text separator
 \newcommand{\customsep}{~\textbullet{}~}
