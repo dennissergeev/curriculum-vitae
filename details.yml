@@ -10,7 +10,7 @@ twitter: meteodenny
 
 # Sections
 
-profile: My research interests include atmospheric dynamics, atmospheric energetics, extreme weather events, as well as predictability of weather and climate. Most of my current research focuses on mesoscale meterology and cyclone dynamics in polar regions. I hope to contribute to our understanding of the dynamics driving the weather on Earth and how its forecasting can be improved.
+profile: My research interests include atmospheric dynamics and energetics, extreme weather events, as well as predictability of weather and climate. Most of my current research focuses on mesoscale meterology and cyclone dynamics in polar regions. I hope to contribute to our understanding of the dynamics driving the weather on Earth and how its forecasting can be improved.
 
 interests:
     - Cyclone dynamics
@@ -33,7 +33,7 @@ education:
           - Analysis of high-resolution model simulations
           - Model skill verification against aircraft and satellite observations
           - Sensitivity to orography and sea ice distribution
-          - Statistical analysis of cyclone tracks
+          - Statistical analysis of cyclone climatology
     - time: 2009--2014
       degree: Specialist Diploma in Meteorology
       thesis: Idealised numerical modelling of polar mesocyclone dynamics
@@ -44,7 +44,7 @@ education:
       highlights:
           - Idealised baroclinic channel simulations
           - Testing different parameterizations and experiment set-ups
-          - Energy and vorticity budgets analysis
+          - Energy and vorticity budgets
 
 internship:
     - time: Oct 2013

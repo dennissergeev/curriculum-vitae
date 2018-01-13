@@ -86,13 +86,13 @@ $for(education)$
 \def\variable{0}
 $for(education.supervisor)$\stepcounter{counterA}$endfor$%
 \ifnum\value{counterA}>1%
-Advisors: 
+Supervisors: 
 $for(education.supervisor)$%
 \stepcounter{counterB}%
 $education.supervisor$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
 $endfor$%
 \else%
-Advisor: $education.supervisor$%
+Supervisor: $education.supervisor$%
 \fi%
 $endif$%
 }%
@@ -147,7 +147,7 @@ $for(publications)$
         \item $if(publications.items.url)$\href{$publications.items.url$}$endif${%
               $publications.items.authors$. $publications.items.time$. $publications.items.title$.%
               $if(publications.items.journal)$~~\emph{$publications.items.journal$}$endif$%
-              $if(publications.items.volume)$, \textbf{$publications.items.volume$}$endif$%
+              $if(publications.items.volume)$, $publications.items.volume$$endif$%
               $if(publications.items.issue)$($publications.items.issue$)$endif$%
               $if(publications.items.pages)$: $publications.items.pages$$endif$}
     $endfor$
