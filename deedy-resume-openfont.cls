@@ -74,10 +74,10 @@ Last Updated on \mydate\today
 
 % Subeadings command
 \titleformat{\subsection}{\raggedright
-\color{subheadings}\fontspec[Path=fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path=fonts/raleway/]{Raleway-Light}\fontsize{12pt}{12pt}\selectfont\scshape}{}{0em}{}
 
-\newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont\uppercase {#1} \normalfont}
+\newcommand{\runsubsection}[1]{\raggedright
+\color{subheadings}\fontspec[Path=fonts/raleway/]{Raleway-Bold}\fontsize{10pt}{10pt}\selectfont\uppercase{#1}\normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
@@ -88,14 +88,16 @@ Last Updated on \mydate\today
 \color{headings}\raggedright\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
 
 % Bullet Lists with fewer gaps command
-\newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+\newenvironment{tightemize}{\vspace{0pt}
+\begin{itemize}\itemsep0.5pt \parskip0pt \parsep0pt}
+{\end{itemize}} %\vspace{-\topsep}}
 
 % multi columns
 \usepackage{multicol}
 \newcommand{\doublecol}[1]{%
+\vspace{-\topsep}
 \begin{multicols}{2}#1\end{multicols}%
+\vspace{-\topsep}
 }
 
 % Symbols from font-awesome
@@ -115,9 +117,9 @@ Last Updated on \mydate\today
     \newlength{#1}\fi%
   \setlength{#1}{0pt}}
 
-\@initializelength{\hintscolumnwidth}     \setlength{\hintscolumnwidth}{0.125\textwidth}
-\@initializelength{\separatorcolumnwidth} \setlength{\separatorcolumnwidth}{0.025\textwidth}
-\@initializelength{\maincolumnwidth}      \setlength{\maincolumnwidth}{0.85\textwidth}
+\@initializelength{\hintscolumnwidth}     \setlength{\hintscolumnwidth}{0.110\textwidth}
+\@initializelength{\separatorcolumnwidth} \setlength{\separatorcolumnwidth}{0.010\textwidth}
+\@initializelength{\maincolumnwidth}      \setlength{\maincolumnwidth}{0.88\textwidth}
 %% commands
 %\newcommand*{\recomputecvbodylengths}{%
 %  % body lengths         
@@ -142,7 +144,7 @@ Last Updated on \mydate\today
 \newcommand*{\cventry}[8][.25em]{%
   \cvitem[#1]{#2}{%
     {\bfseries#3}%
-    \ifthenelse{\equal{#4}{}}{}{ | {\slshape#4}}%
+    \ifthenelse{\equal{#4}{}}{}{ | #4}%
     \ifthenelse{\equal{#5}{}}{}{ | #5}%
     \ifthenelse{\equal{#6}{}}{}{ | #6}%
     \strut%

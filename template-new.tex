@@ -29,6 +29,9 @@ $endif$
 % personal data
 \newcommand{\sergeev}{\textbf{Sergeev DE}}
 
+% Counters
+\newcounter{counterA}
+\newcounter{counterB}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Begin document
@@ -60,10 +63,12 @@ $if(address)$
 $address$ 
 $endif$
 }
+$if(profile)$
 \begin{minipage}[t]{\textwidth}
-My name is Denis Sergeev and I am doing a PhD in Meteorology at the University of East Anglia, UK. My research aims at understanding the dynamics of polar mesoscale cyclones, as well as their representation in modern numerical weather prediction systems.
+$profile$
 \end{minipage}
 \sectionsep
+$endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -75,8 +80,32 @@ $for(education)$
 {$if(education.distinct)$$education.distinct$$endif$}%
 {$if(education.institution)$\emph{$education.institution$}$endif$}%
 {$if(education.location)$$education.location$$endif$}%
-{$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$}%
-{$if(education.supervisor)$Supervisor: $education.supervisor$$endif$}
+{$if(education.supervisor)$%
+\setcounter{counterA}{0}%
+\setcounter{counterB}{0}%
+\def\variable{0}
+$for(education.supervisor)$\stepcounter{counterA}$endfor$%
+\ifnum\value{counterA}>1%
+Advisors: 
+$for(education.supervisor)$%
+\stepcounter{counterB}%
+$education.supervisor$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
+$endfor$%
+\else%
+Advisor: $education.supervisor$%
+\fi%
+$endif$%
+}%
+{$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$
+$if(education.highlights)$%
+{\small%
+\begin{tightemize}%
+$for(education.highlights)$
+\item $education.highlights$%
+$endfor$
+\end{tightemize}}%
+$endif$%
+}%
 $endfor$
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,10 +116,23 @@ $for(internship)$
 \cventry{$internship.time$}%
 {$internship.title$}%
 {$if(internship.department)$$internship.department$$endif$}%
-{}%
 {$if(internship.institution)$\emph{$internship.institution$}$endif$}%
 {$if(internship.location)$$internship.location$$endif$}%
-{$if(internship.supervisor)$Supervisor: $internship.supervisor$$endif$}%
+{$if(internship.supervisor)$%
+\setcounter{counterA}{0}%
+\setcounter{counterB}{0}%
+\def\variable{0}
+$for(internship.supervisor)$\stepcounter{counterA}$endfor$%
+\ifnum\value{counterA}>\variable%
+Supervisors: 
+$for(internship.supervisor)$%
+\stepcounter{counterB}%
+$internship.supervisor$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
+$endfor$%
+\else%
+Supervisor: $internship.supervisor$%
+\fi%
+$endif$}%
 {}%
 $endfor$
 \sectionsep
@@ -164,23 +206,21 @@ $endfor$
 %    SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computer Skills}
-\newcounter{totcnt}
-\newcounter{skillcount}
 \doublecol{%
 $for(skills)$
 \descript{$skills.group$: }%
 $if(skills.forte)$\emph{$skills.forte$}\customsep$endif$%
-\setcounter{totcnt}{0}%
-\setcounter{skillcount}{0}%
-$for(skills.skill)$\stepcounter{totcnt}$endfor$%
+\setcounter{counterA}{0}%
+\setcounter{counterB}{0}%
+$for(skills.skill)$\stepcounter{counterA}$endfor$%
 $for(skills.skill)$
-\stepcounter{skillcount}%
-$skills.skill$\ifnum\value{skillcount}<\value{totcnt}\customsep\fi%
+\stepcounter{counterB}%
+$skills.skill$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
 $endfor$
 \\
 $endfor$
 }
-\sectionsep
+\vspace{-8pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LANGUAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -269,7 +309,6 @@ $service.items$\newline{}
 $endfor$
 }%
 $endfor$
-\sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     OUTREACH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -283,11 +322,11 @@ $for(outreach)$
 {}%
 {%
 {\small%
-\begin{itemize}
+\begin{tightemize}
 $for(outreach.items)$
 \item \href{$outreach.items.url$}{$outreach.items.title$}
 $endfor$
-\end{itemize}
+\end{tightemize}
 }
 }%
 $endfor$
@@ -300,7 +339,7 @@ $for(other)$
     \cventry{$if(other.time)$$other.time$$endif$}%
 {$if(other.title)$$if(other.url)$\href{$other.url$}$endif${$other.title$}$endif$}%
 {$if(other.info)$$other.info$$endif$}%
-{$if(other.institution)$$other.institution$$endif$}%
+{$if(other.location)$$other.location$$endif$}%
 {}%
 {}%
 {}%
