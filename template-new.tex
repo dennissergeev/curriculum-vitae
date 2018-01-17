@@ -121,9 +121,8 @@ $for(internship)$
 {$if(internship.supervisor)$%
 \setcounter{counterA}{0}%
 \setcounter{counterB}{0}%
-\def\variable{0}
 $for(internship.supervisor)$\stepcounter{counterA}$endfor$%
-\ifnum\value{counterA}>\variable%
+\ifnum\value{counterA}>1%
 Supervisors: 
 $for(internship.supervisor)$%
 \stepcounter{counterB}%
