@@ -84,6 +84,8 @@ training:
           time: Feb 2017
         - name: Sea Survival course
           time: Dec 2017
+        - name: Helicopter Underwater Escape Training Course (CA-EBS)
+          time: Jan 2018
 
 fieldwork:
     - time: Aug 2012 
