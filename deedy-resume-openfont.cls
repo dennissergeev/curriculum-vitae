@@ -11,6 +11,7 @@
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
+% \usepackage{hyperref}
 
 % Publications
 \usepackage{cite}
@@ -97,6 +98,11 @@ Last Updated on \mydate\today
 \newcommand{\doublecol}[1]{%
 \vspace{-\topsep}
 \begin{multicols}{2}#1\end{multicols}%
+\vspace{-\topsep}
+}
+\newcommand{\triplecol}[1]{%
+\vspace{-\topsep}
+\begin{multicols}{3}#1\end{multicols}%
 \vspace{-\topsep}
 }
 

@@ -10,7 +10,7 @@ twitter: meteodenny
 
 # Sections
 
-profile: My research interests include atmospheric dynamics and energetics, extreme weather events, as well as predictability of weather and climate. Most of my current research focuses on mesoscale meterology and cyclone dynamics in polar regions. I hope to contribute to our understanding of the dynamics driving the weather on Earth and how its forecasting can be improved.
+profile: My interests include atmospheric dynamics and energetics, boundary-layer processes, as well as extraterrestrial meteorology. Most of my current research focuses on mesoscale meterology and cyclone dynamics in polar regions. I hope to contribute to our understanding of the geophysical instabilities driving the weather on Earth as well as other planets.
 
 interests:
     - Cyclone dynamics
@@ -277,7 +277,7 @@ memberships:
 service:
     - name: Acted as reviewer for
       items:
-          - Quarterly Journal of the Royal Meteorological Society
+          - Quarterly Journal of the Royal Meteorological Society (x3)
 
 outreach:
     - time: 2015--Present
@@ -353,6 +353,9 @@ referees:
     - name: Prof. Thomas Spengler
       email: thomas.spengler@uib.no
       info: Co-supervisor
+    - name: Prof. Adrian Matthews
+      email: a.j.matthews@uea.ac.uk
+      info: Professor of Meteorology 
 
 # Settings
 lang: en-GB

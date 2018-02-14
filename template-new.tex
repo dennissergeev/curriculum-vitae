@@ -19,7 +19,6 @@ $endif$
 
 % PDF SETUP
 %--------------------------------
-\usepackage{hyperref}
 \hypersetup
 {
   pdfauthor={$firstname$ $lastname$},
@@ -42,7 +41,7 @@ $endif$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TITLE NAME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{$firstname$}{$lastname$}{ \urlstyle{same}
+\namesection{$firstname$}{$lastname$}{% \urlstyle{same}
 $if(mobilephone)$
 ~~\mobilephonesymbol$mobilephone$
 $endif$
@@ -349,7 +348,7 @@ $endfor$
 %     REFERENCES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{References}
-\doublecol{%
+\triplecol{%
 $for(referees)$
 \descript{$referees.name$}\\$referees.info$\\\href{mailto:$referees.email$}{$referees.email$}\\
 $endfor$
