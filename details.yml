@@ -295,6 +295,10 @@ outreach:
               url: "http://www.scisnack.com/2014/12/17/worldwide-weird-weather-words/"
 
 other:
+    - time: Apr--Jun 2018
+      title: Data technician
+      info: Processing of meteorological data collected in the IGP field campaign
+      location: University of East Anglia
     - time: 2015--Present
       title: Python group leader
       info: Founder and leader of the Python programming language users group
