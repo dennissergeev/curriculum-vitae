@@ -10,7 +10,7 @@ twitter: meteodenny
 
 # Sections
 
-profile: My interests include atmospheric dynamics and energetics, boundary-layer processes, as well as extraterrestrial meteorology. Most of my current research focuses on mesoscale meterology and cyclone dynamics in polar regions. I hope to contribute to our understanding of the geophysical instabilities driving the weather on Earth as well as other planets.
+profile: My interests include atmospheric dynamics and energetics, boundary-layer processes, as well as air-sea interaction. Most of my current research focuses on mesoscale meterology and cyclone dynamics in polar regions. I hope to contribute to our understanding of the geophysical instabilities that drives weather and climate on Earth.
 
 interests:
     - Cyclone dynamics
@@ -88,6 +88,10 @@ training:
           time: Jan 2018
 
 fieldwork:
+    - time: Feb--Mar 2018
+      title: The Iceland-Greenland Seas Project (IGP) field campaign
+      info: Characterising the atmospheric forcing and the ocean response of coupled atmosphere-ocean processes; in particular cold-air outbreaks in the vicinity of the marginal ice zone and their triggering of oceanic heat loss and the generation of dense water masses
+      location: Akureyri, Iceland
     - time: Aug 2012 
       title: Field practice in meteorology
       info: Study of prevailing mesoscale processes via wind characteristic measurements and lake hydrothermodynamical modelling
@@ -100,14 +104,14 @@ fieldwork:
       title: Field practice in meteorology
       info: Basic field techniques in atmospheric sciences (atmosphere vertical structure, turbulence and radiative measurements)
       location: Khibiny mountains, Murmansk region, Russia
-    - time: Jan--Feb 2011
-      title: Field practice in meteorology
-      info: Micrometeorological measurements, ice-breeze modelling
-      location: White Sea Biological Station, Karel Republic, Russia
-    - time: Jun--Jul 2010 
-      title: Field practice in geographical studies
-      info: Basic training in meteorology, hydrology, geomorphology, soil science, biogeography, topography
-      location: Kaluga region, Russia
+#    - time: Jan--Feb 2011
+#      title: Field practice in meteorology
+#      info: Micrometeorological measurements, ice-breeze modelling
+#      location: White Sea Biological Station, Karel Republic, Russia
+#    - time: Jun--Jul 2010 
+#      title: Field practice in geographical studies
+#      info: Basic training in meteorology, hydrology, geomorphology, soil science, biogeography, topography
+#      location: Kaluga region, Russia
 
 teaching:
     - time: Jan 2018
@@ -139,12 +143,12 @@ publications:
             time: 2018
             title: Modification of polar low development by orography and sea ice
             journal: Monthly Weather Review
-            pages: about to be submitted
+            pages: under review
           - authors: Shestakova AA, Toropov PA, Stepanenko VM, \sergeev, and Repina IA
             time: 2018
             title: "Observations and modelling of downslope windstorm in Novorossiysk"
             journal: Boundary-Layer Meteorology
-            pages: submitted
+            pages: under review
           - authors: \sergeev, Renfrew IA, Spengler T, and Dorling SR
             time: 2017
             title: Structure of a shear-line polar low
@@ -349,13 +353,16 @@ languages:
 referees:
     - name: Prof. Ian Renfrew
       info: Primary supervisor
+      institute: University of East Anglia
       email: i.renfrew@uea.ac.uk
     - name: Prof. Thomas Spengler
-      email: thomas.spengler@uib.no
       info: Co-supervisor
+      institute: University of Bergen
+      email: thomas.spengler@uib.no
     - name: Prof. Adrian Matthews
-      email: a.j.matthews@uea.ac.uk
       info: Professor of Meteorology 
+      institute: University of East Anglia
+      email: a.j.matthews@uea.ac.uk
 
 # Settings
 lang: en-GB
