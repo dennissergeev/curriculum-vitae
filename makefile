@@ -5,17 +5,14 @@ outold = cv-sergeev-old.pdf
 outnew = cv-sergeev-new.pdf
 FLAGS = --pdf-engine=xelatex
 
-all: $(outold) $(outnew)
-	convert $(outold)[0] preview.png
-
-old: $(outold)
-	@xdg-open $(outold) > /dev/null 2>&1
+all: $(outnew)
+	convert $(outnew)[0] preview.png
 
 new: $(outnew)
 	@xdg-open $(outnew) > /dev/null 2>&1
 
-preview: $(outold)
-	convert $(outold)[0] preview.png
+preview: $(outnew)
+	convert $(outnew)[0] preview.png
 
 $(outnew) : $(srcnew)
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
