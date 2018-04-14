@@ -63,6 +63,9 @@ internship:
 
 training:
     - items:
+        - name: Fortran Modernisation Workshop
+          time: Apr 2018
+          url: "https://www.nag.co.uk/content/fortran-modernization-workshop"
         - name: WWRP/WCRP/Bolin Center Polar Prediction School
           time: Apr 2016
           url: "http://www.climate-cryosphere.org/wcrp/pcpi/meetings/abisko-pp-2016"
