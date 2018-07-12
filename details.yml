@@ -21,9 +21,9 @@ interests:
     - Extraterrestrial meteorology
 
 education:
-    - time: 2014--Present
+    - time: 2014--2018
       degree: PhD in Meteorology
-      thesis: Dynamics and Predictability of Polar Lows
+      thesis: Characteristics of polar lows in the Nordic Seas and the impact of orography and sea ice on their development
       institution: University of East Anglia
       location: Norwich, United Kingdom
       supervisor:
@@ -152,7 +152,8 @@ publications:
             time: 2018
             title: "Observations and modelling of downslope windstorm in Novorossiysk"
             journal: Dynamics of Atmospheres and Oceans
-            pages: under review
+            volume: 83
+            pages: 83--99
           - authors: \sergeev, Renfrew IA, Spengler T, and Dorling SR
             time: 2017
             title: Structure of a shear-line polar low

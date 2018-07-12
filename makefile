@@ -3,7 +3,7 @@ srcold = template-old.tex details.yml
 srcnew = template-new.tex details.yml deedy-resume-openfont.cls
 outold = cv-sergeev-old.pdf
 outnew = cv-sergeev-new.pdf
-FLAGS = --latex-engine=xelatex
+FLAGS = --pdf-engine=xelatex
 
 all: $(outnew)
 	convert $(outnew)[0] preview.png
