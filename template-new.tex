@@ -70,6 +70,20 @@ $profile$
 $endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFESSIONAL EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Professional Experience}
+$for(professional)$
+\cventry{$professional.time$}%
+{$professional.position$}%
+{$professional.topic$}%
+{$if(professional.department)$$professional.department$$endif$}%
+{$if(professional.institution)$\emph{$professional.institution$}$endif$}%
+{$if(professional.location)$$professional.location$$endif$}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}

@@ -14,11 +14,18 @@ profile: My interests include atmospheric dynamics and energetics, boundary-laye
 
 
 interests:
+    - Extraterrestrial meteorology
     - Cyclone dynamics
     - Mesoscale meteorology
     - Atmospheric energetics
     - Boundary layer meteorology
-    - Extraterrestrial meteorology
+
+professional:
+    - time: 2018--2021
+      position: Postdoctoral Research Fellow
+      topic: Climate modelling of rocky exoplanets
+      institution: University of Exeter
+      location: Exeter, United Kingdom
 
 education:
     - time: 2014--2018
@@ -147,7 +154,7 @@ publications:
             time: 2018
             title: Modification of polar low development by orography and sea ice
             journal: Monthly Weather Review
-            pages: under review
+            pages: accepted
           - authors: Shestakova AA, Toropov PA, Stepanenko VM, \sergeev, and Repina IA
             time: 2018
             title: "Observations and modelling of downslope windstorm in Novorossiysk"
@@ -202,6 +209,11 @@ publications:
 conferences:
     - type: Oral presentations
       items:
+          - title: Modification of Polar Low Development by Sea Ice and Svalbard Orography
+            url: "https://speakerdeck.com/dennissergeev/polar2018"
+            conference: POLAR2018
+            date: Jun 2018
+            location: Davos, Switzerland
           - title: The influence of Svalbard orography and sea ice on polar low development
             url: "https://figshare.com/articles/The_influence_of_Svalbard_orography_and_sea_ice_on_polar_low_development/5510416"
             conference: 18th Cyclone Workshop
