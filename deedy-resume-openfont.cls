@@ -26,8 +26,8 @@
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Mapping=tex-text, Path=fonts/lato/, BoldItalicFont=Lato-RegIta, BoldFont=Lato-Reg, ItalicFont=Lato-LigIta]{Lato-Lig}
-\setsansfont[Scale=MatchLowercase, Mapping=tex-text, Path=fonts/raleway/]{Raleway-ExtraLight}
+\setmainfont[Color=primary, Mapping=tex-text, Path=fonts/exo2/, BoldItalicFont=Exo2-LightItalic, BoldFont=Exo2-Light, ItalicFont=Exo2-ThinItalic]{Exo2-Thin}
+\setsansfont[Scale=MatchLowercase, Mapping=tex-text, Path=fonts/exo2/]{Exo2-ExtraLight}
 \usepackage{xltxtra}
 \usepackage{xunicode}
 
@@ -42,7 +42,7 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/exo2/]{Exo2-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on \mydate\today
 \end{textblock}}
 
@@ -50,12 +50,12 @@ Last Updated on \mydate\today
 \newcommand{\namesection}[3]{
 \centering{
 \fontsize{40pt}{60pt}
-\fontspec[Path=fonts/lato/]{Lato-Hai}\selectfont #1 
-\fontspec[Path=fonts/lato/]{Lato-Lig}\selectfont #2
+\fontspec[Path=fonts/exo2/]{Exo2-Light}\selectfont #1 
+\fontspec[Path=fonts/exo2/]{Exo2-Medium}\selectfont #2
 } \\[5pt]
 \centering{
 \color{headings}
-\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+\fontspec[Path=fonts/exo2/]{Exo2-Medium}\fontsize{11pt}{14pt}\selectfont #3}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
 }
@@ -71,22 +71,22 @@ Last Updated on \mydate\today
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path=fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path=fonts/exo2/]{Exo2-Thin}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\raggedright
-\color{subheadings}\fontspec[Path=fonts/raleway/]{Raleway-Light}\fontsize{12pt}{12pt}\selectfont\scshape}{}{0em}{}
+\color{subheadings}\fontspec[Path=fonts/exo2/]{Exo2-Light}\fontsize{12pt}{12pt}\selectfont\scshape}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{\raggedright
-\color{subheadings}\fontspec[Path=fonts/raleway/]{Raleway-Bold}\fontsize{10pt}{10pt}\selectfont\uppercase{#1}\normalfont}
+\color{subheadings}\fontspec[Path=fonts/exo2/]{Exo2-SemiBold}\fontsize{10pt}{10pt}\selectfont\uppercase{#1}\normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{11pt}\selectfont {#1} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path=fonts/exo2/]{Exo2-Medium}\fontsize{9pt}{11pt}\selectfont {#1} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path=fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
+\color{headings}\raggedright\fontspec[Path=fonts/exo2/]{Exo2-Medium}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{0pt}
