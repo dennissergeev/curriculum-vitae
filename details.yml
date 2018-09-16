@@ -63,7 +63,7 @@ internship:
       supervisor:
           - Prof. Thomas Spengler
     - time: Jul 2012
-      title: Junior Researcher
+      title: Intern 
       department: Laboratory of Climate Theory
       institution: A.M. Obukhov Institute of Atmospheric Physics
       location: Moscow, Russia
@@ -358,10 +358,6 @@ skills:
       skill:
           - LaTeX
           - Markdown
-    - group: Web development
-      skill: 
-          - HTML
-          - CSS
 
 languages:
     - language: Russian
