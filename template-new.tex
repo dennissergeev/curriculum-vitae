@@ -349,7 +349,7 @@ $endfor$
 \section{References}
 \triplecol{%
 $for(referees)$
-\descript{$referees.name$}\\$referees.info$\\$if(referees.institute)$$referees.institute$\\$endif$\href{mailto:$referees.email$}{$referees.email$}\\
+\descript{$referees.name$}\\$if(referees.info)$$referees.info$\\$endif$$if(referees.institute)$$referees.institute$\\$endif$\href{mailto:$referees.email$}{$referees.email$}\\
 $endfor$
 }
 \sectionsep

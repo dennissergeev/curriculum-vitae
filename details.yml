@@ -368,18 +368,15 @@ languages:
       proficiency: Basic
 
 referees:
-    - name: Prof. Ian Renfrew
-      info: Primary supervisor
+    - name: Prof Ian Renfrew
       institute: University of East Anglia
       email: i.renfrew@uea.ac.uk
-    - name: Prof. Thomas Spengler
-      info: Co-supervisor
+    - name: Prof Thomas Spengler
       institute: University of Bergen
       email: thomas.spengler@uib.no
-    - name: Prof. Adrian Matthews
-      info: Professor of Meteorology 
-      institute: University of East Anglia
-      email: a.j.matthews@uea.ac.uk
+    - name: Dr F Hugo Lambert
+      institute: University of Exeter
+      email: f.h.lambert@exeter.ac.uk
 
 # Settings
 lang: en-GB
