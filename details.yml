@@ -135,7 +135,7 @@ teaching:
       title: Teaching assistance
       institution: University of East Anglia
       location: Norwich, UK
-      info: Modelling Environmental Processes, Meteorology, Numerical Skills for Scientists, Physical and Chemical Processes in Earth's System
+      info: Modelling Environmental Processes, Meteorology, Numerical Skills for Scientists
     - time: Apr 2017
       title: Field course teaching assistance
       institution: University of East Anglia
@@ -152,9 +152,10 @@ publications:
       items:
           - authors: \sergeev, Renfrew IA, and Spengler T
             time: 2018
-            title: Modification of polar low development by orography and sea ice
+            title: "Modification of polar low development by orography and sea ice"
             journal: Monthly Weather Review
-            pages: accepted
+            pages: 3325–3341
+            volume: 146
           - authors: Shestakova AA, Toropov PA, Stepanenko VM, \sergeev, and Repina IA
             time: 2018
             title: "Observations and modelling of downslope windstorm in Novorossiysk"
