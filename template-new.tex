@@ -277,18 +277,18 @@ $endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     MEMBERSHIPS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Membership in Professional Associations} 
-$for(memberships)$
-\cventry{$memberships.time$}%
-{$memberships.body$}%
-{}%
-{}%
-{}%
-{}%
-{}%
-{}%
-$endfor$
-\sectionsep
+% \section{Membership in Professional Associations} 
+% $for(memberships)$
+% \cventry{$memberships.time$}%
+% {$memberships.body$}%
+% {}%
+% {}%
+% {}%
+% {}%
+% {}%
+% {}%
+% $endfor$
+% \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDITORIAL SERVICE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -347,6 +347,7 @@ $endfor$
 %     REFERENCES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{References}
+%% \quadcol{%
 \triplecol{%
 $for(referees)$
 \descript{$referees.name$}\\$if(referees.info)$$referees.info$\\$endif$$if(referees.institute)$$referees.institute$\\$endif$\href{mailto:$referees.email$}{$referees.email$}\\

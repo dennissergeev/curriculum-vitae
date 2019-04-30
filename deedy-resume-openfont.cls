@@ -105,6 +105,11 @@ Last Updated on \mydate\today
 \begin{multicols}{3}#1\end{multicols}%
 \vspace{-\topsep}
 }
+\newcommand{\quadcol}[1]{%
+\vspace{-\topsep}
+\begin{multicols}{4}#1\end{multicols}%
+\vspace{-\topsep}
+}
 
 % Symbols from font-awesome
 \usepackage{fontawesome}

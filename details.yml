@@ -2,28 +2,20 @@
 # Personal details
 firstname: Denis
 lastname: Sergeev
-address: School of Environmental Sciences | University of East Anglia | Norwich | United Kingdom | NR47TJ 
-email: d.sergeev@uea.ac.uk
+address: College of Engineering, Mathematics and Physical Sciences | University of Exeter | Exeter | United Kingdom
+email: d.sergeev@exeter.ac.uk
 homepage: dennissergeev.github.io
 github: dennissergeev
 twitter: meteodenny
 
 # Sections
 
-profile: My interests include exoplanet atmospheric dynamics, as well as mesoscale meteorology and cyclone dynamics in high latitudes. Most of my current research focuses on the atmospheric modelling of extrasolar planets. I hope to contribute to our understanding of the climate regimes on different planets and their potential for habitability.
-
-
-interests:
-    - Extraterrestrial meteorology
-    - Cyclone dynamics
-    - Mesoscale meteorology
-    - Atmospheric energetics
-    - Boundary layer meteorology
+profile: My interests include exoplanet atmospheric dynamics, general circulation of the atmosphere, polar meteorology. Most of my current research focuses on the atmospheric modelling of terrestrial planets. I hope to contribute to our understanding of the climate regimes on different planets and their potential for habitability.
 
 professional:
     - time: 2018--2021
       position: Postdoctoral Research Fellow
-      topic: Climate modelling of rocky exoplanets
+      topic: Climate modelling of terrestrial exoplanets
       institution: University of Exeter
       location: Exeter, United Kingdom
 
@@ -71,6 +63,9 @@ internship:
 
 training:
     - items:
+        - name: "2nd ICTP Summer School on Theory, Mechanisms and Hierarchical Modelling of Climate Dynamics: Convective Organization and Climate Sensitivity"
+          time: Jul 2019
+          url: "http://indico.ictp.it/event/8669/"
         - name: Fortran Modernisation Workshop
           time: Apr 2018
           url: "https://www.nag.co.uk/content/fortran-modernization-workshop"
@@ -111,10 +106,10 @@ fieldwork:
       title: Field practice in meteorology
       info: Measurements of the convective boundary layer over the polynya
       location: White Sea Biological Station, Karel Republic, Russia
-    - time: Jun--Jul 2011
-      title: Field practice in meteorology
-      info: Basic field techniques in atmospheric sciences (atmosphere vertical structure, turbulence and radiative measurements)
-      location: Khibiny mountains, Murmansk region, Russia
+#     - time: Jun--Jul 2011
+#       title: Field practice in meteorology
+#       info: Basic field techniques in atmospheric sciences (atmosphere vertical structure, turbulence and radiative measurements)
+#       location: Khibiny mountains, Murmansk region, Russia
 #    - time: Jan--Feb 2011
 #      title: Field practice in meteorology
 #      info: Micrometeorological measurements, ice-breeze modelling
@@ -210,6 +205,11 @@ publications:
 conferences:
     - type: Oral presentations
       items:
+          - title: Atmospheric convection on tidally-locked Earth-like exoplanets
+            url: "https://ukexcon19.github.io/talks-abstracts-UKEXOM2019.pdf"
+            conference: UK Exoplanet Community Meeting
+            date: Apr 2019
+            location: London, UK
           - title: Modification of Polar Low Development by Sea Ice and Svalbard Orography
             url: "https://speakerdeck.com/dennissergeev/polar2018"
             conference: POLAR2018
@@ -292,10 +292,10 @@ grants:
       title: Developing and verification of the mesoscale sensible heat and tracers fluxes over hydrologically inhomogeneous surface
       institution: Grant of the President of Russian Federation
 
-memberships:
-    - time: 2014--Present
-      body: Royal Meteorological Society (RMetS)
-
+# memberships:
+#     - time: 2014--Present
+#       body: Royal Meteorological Society (RMetS)
+# 
 service:
     - name: Acted as reviewer for
       items:
@@ -337,7 +337,7 @@ skills:
       skill:
           - Unix
           - Windows
-    - group: Computer Languages
+    - group: Computer languages
       forte: Python
       skill:
           - Fortran
