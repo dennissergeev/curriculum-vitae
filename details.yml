@@ -227,14 +227,14 @@ conferences:
             location: Cambridge, UK
           - title: Structure of the shear-line polar low south of Svalbard
             url: "http://slides.com/denissergeev/deck"
-            conference: 13th European Polar Lows Working Group (EPLWG) Workshop
-            date: Apr 2016
-            location: Paris, France
-          - title: Structure of the shear-line polar low south of Svalbard
-            url: "http://slides.com/denissergeev/deck"
             conference: NORPAN kick-off meeting
             date: May 2016
             location: Tokyo, Japan
+          - title: Structure of the shear-line polar low south of Svalbard
+            url: "http://slides.com/denissergeev/deck"
+            conference: 13th European Polar Lows Working Group (EPLWG) Workshop
+            date: Apr 2016
+            location: Paris, France
     - type: Poster presentations
       items: 
           - title: Structure and dynamics of a shear-line polar low during a cold-air outbreak over the Norwegian Sea
@@ -278,19 +278,19 @@ awards:
       name: Russian Academy of Sciences Young Scientist Medal
     - time: 2009
       name: 3rd place in the All-Russian Geography Olympiad
-    - time: 2009
-      name: 1st place in the Lomonosov Geography Olympiad
+#     - time: 2009
+#       name: 1st place in the Lomonosov Geography Olympiad
 
-grants:
-    - time: 2014--2016
-      title: Characteristics of the mesoscale atmospheric circulations in the Arctic and their influence on the atmosphere-ocean energy exchange
-      institution: Russian Foundation for Basic Research (RFBR) Grant
-    - time: 2013--2015
-      title: Multiscale modelling of turbulent atmospheric flow above sea surface with inhomogeneous ice cover
-      institution: Russian Foundation for Basic Research (RFBR) Grant
-    - time: 2013--2015
-      title: Developing and verification of the mesoscale sensible heat and tracers fluxes over hydrologically inhomogeneous surface
-      institution: Grant of the President of Russian Federation
+# grants:
+#     - time: 2014--2016
+#       title: Characteristics of the mesoscale atmospheric circulations in the Arctic and their influence on the atmosphere-ocean energy exchange
+#       institution: Russian Foundation for Basic Research (RFBR) Grant
+#     - time: 2013--2015
+#       title: Multiscale modelling of turbulent atmospheric flow above sea surface with inhomogeneous ice cover
+#       institution: Russian Foundation for Basic Research (RFBR) Grant
+#     - time: 2013--2015
+#       title: Developing and verification of the mesoscale sensible heat and tracers fluxes over hydrologically inhomogeneous surface
+#       institution: Grant of the President of Russian Federation
 
 # memberships:
 #     - time: 2014--Present
