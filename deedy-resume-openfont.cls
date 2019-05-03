@@ -41,10 +41,11 @@
 %\usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
+\newcommand{\lastupdated}{\begin{textblock}{60}(185,275)
 \color{date}\fontspec[Path = fonts/exo2/]{Exo2-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
 Last updated: \mydate\today
-\end{textblock}}
+\end{textblock}
+}
 
 % Name command
 \newcommand{\namesection}[3]{

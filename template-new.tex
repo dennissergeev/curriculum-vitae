@@ -36,7 +36,6 @@ $endif$
 %     Begin document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TITLE NAME
@@ -49,13 +48,13 @@ $if(email)$
 ~~\emailsymbol\href{mailto:$email$}{$email$}
 $endif$
 $if(homepage)$
-~~\homepagesymbol\href{http://$homepage$}{$homepage$}
+~~\homepagesymbol\href{https://$homepage$}{$homepage$}
 $endif$
 $if(github)$
-~~\githubsymbol\href{http://github.com/$github$}{$github$}
+~~\githubsymbol\href{https://github.com/$github$}{$github$}
 $endif$
 $if(twitter)$
-~~\twittersymbol\href{http://twitter.com/$twitter$}{$twitter$}
+~~\twittersymbol\href{https://twitter.com/$twitter$}{$twitter$}
 $endif$
 $if(address)$
 \\
@@ -365,4 +364,5 @@ $endfor$
 %\nocite{*}
 
 %\end{minipage} 
+\lastupdated
 \end{document}
