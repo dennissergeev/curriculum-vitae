@@ -43,7 +43,7 @@
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
 \color{date}\fontspec[Path = fonts/exo2/]{Exo2-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \mydate\today
+Last updated: \mydate\today
 \end{textblock}}
 
 % Name command
