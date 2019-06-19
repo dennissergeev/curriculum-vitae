@@ -145,6 +145,11 @@ teaching:
 publications:
     - name: Peer-reviewed
       items:
+          - authors: \sergeev, Renfrew IA, Spengler T, Terpstra, A, and Watanabe S-I
+            time: 2019
+            title: "North Atlantic polar mesoscale cyclones in ERA5 and ERA-Interim reanalyses"
+            journal: Geophysical Research Letters
+            volume: submitted
           - authors: \sergeev, Renfrew IA, and Spengler T
             time: 2018
             title: "Modification of polar low development by orography and sea ice"
@@ -205,6 +210,11 @@ publications:
 conferences:
     - type: Oral presentations
       items:
+          - title: North Atlantic polar mesoscale cyclones in ERA5 and ERA-Interim reanalyses
+            url: "https://speakerdeck.com/dennissergeev/north-atlantic-polar-mesoscale-cyclones-in-era5-and-era-interim-reanalyses"
+            conference: IGP workshop
+            date: Jun 2019
+            location: Norwich, UK
           - title: Atmospheric convection on tidally-locked Earth-like exoplanets
             url: "https://ukexcon19.github.io/talks-abstracts-UKEXOM2019.pdf"
             conference: UK Exoplanet Community Meeting
