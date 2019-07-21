@@ -26,7 +26,8 @@ $endif$
   pdftitle={$firstname$ $lastname$'s CV},
 }
 % personal data
-\newcommand{\sergeev}{\textbf{Sergeev DE}}
+\newcommand{\sergeev}{\textbf{Sergeev, D.E.}}
+\newcommand{\desergeev}{\textbf{D.E. Sergeev}}
 
 % Counters
 \newcounter{counterA}
@@ -193,6 +194,20 @@ $for(awards)$
 {}%
 {}%
 {}%
+{}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUPERVISION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Supervision of students}
+$for(supervision)$
+\cventry{$supervision.time$}%
+{$supervision.name$}%
+{$if(supervision.type)$$supervision.type$$endif$}%
+{$if(supervision.institution)$\emph{$supervision.institution$}$endif$}%
+{$if(supervision.title)$$supervision.title$$endif$}%
 {}%
 {}%
 $endfor$

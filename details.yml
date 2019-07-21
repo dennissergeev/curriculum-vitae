@@ -61,6 +61,19 @@ internship:
       location: Moscow, Russia
       supervisor: Dr. Alexey Eliseev
 
+supervision:
+    - time: 2019
+      name: Isobel Parry
+      institution: University of Exeter
+      type: Summer student
+      title: "Water cycle on Proxima Centauri b"
+    - time: 2018-2019
+      name: Jake Eager
+      institution: University of Exeter
+      type: MSc
+      title: "Implications of Stellar Type on the Habitability of Tidally Locked Terrestrial Exoplanets"
+
+
 training:
     - items:
         - name: "2nd ICTP Summer School on Theory, Mechanisms and Hierarchical Modelling of Climate Dynamics: Convective Organization and Climate Sensitivity"
@@ -145,24 +158,30 @@ teaching:
 publications:
     - name: Peer-reviewed
       items:
-          - authors: \sergeev, Renfrew IA, Spengler T, Terpstra, A, and Watanabe S-I
+          - authors: \sergeev, I.A. Renfrew, T. Spengler, A. Terpstra, and S.-I. Watanabe
             time: 2019
             title: "North Atlantic polar mesoscale cyclones in ERA5 and ERA-Interim reanalyses"
             journal: Geophysical Research Letters
             volume: submitted
-          - authors: \sergeev, Renfrew IA, and Spengler T
+          - authors: Renfrew, I.A., R.S. Pickart, K. Våge, G.W. Moore, T.J. Bracegirdle, A.D. Elvidge, E. Jeansson, T. Lachlan-Cope, L. McRaven, L. Papritz, J. Reuder, H. Sodemann, A. Terpstra, S. Waterman, H. Valdimarsson, A. Weiss, M. Almansi, F. Bahr, A. Brakstad, C. Barrell, J.K. Brooke, B. Brooks, I.M. Brooks, M.E. Brooks, E.M. Bruvik, C. Duscha, I. Fer, H.M. Golid, M. Hallerstig, I. Hessevik, J. Huang, L. Houghton, S. Jónsson, M. Jonassen, K. Jackson, K. Kvalsund, E.W. Kolstad, K. Konstali, J. Kristiansen, R. Ladkin, P. Lin, A. Macrander, A. Mitchell, H. Olafsson, A. Pacini, C. Payne, B. Palmason, M.D. Pérez-Hernández, A.K. Peterson, G.N. Petersen, M.N. Pisareva, J.O. Pope, A. Seidl, S. Semper, \desergeev, S. Skjelsvik, H. Søiland, D. Smith, M.A. Spall, T. Spengler, A. Touzeau, G. Tupper, Y. Weng, K.D. Williams, X. Yang, and S. Zhou
+            time: 2019
+            title: "The Iceland Greenland Seas Project"
+            journal: Bulletin of American Meteorological Society
+            volume: accepted
+            url: "https://doi.org/10.1175/BAMS-D-18-0217.1"
+          - authors: \sergeev, I.A. Renfrew, and T. Spengler
             time: 2018
             title: "Modification of polar low development by orography and sea ice"
             journal: Monthly Weather Review
             pages: 3325–3341
             volume: 146
-          - authors: Shestakova AA, Toropov PA, Stepanenko VM, \sergeev, and Repina IA
+          - authors: Shestakova, A.A., P.A. Toropov, V.M. Stepanenko, \desergeev, and I.A. Repina
             time: 2018
             title: "Observations and modelling of downslope windstorm in Novorossiysk"
             journal: Dynamics of Atmospheres and Oceans
             volume: 83
             pages: 83--99
-          - authors: \sergeev, Renfrew IA, Spengler T, and Dorling SR
+          - authors: \sergeev, I.A. Renfrew, T. Spengler, and S.R. Dorling 
             time: 2017
             title: Structure of a shear-line polar low
             journal: Quaterly Journal of the Royal Meteorological Society
@@ -170,7 +189,7 @@ publications:
             issue: 702
             pages: 12--26
             url: "http://onlinelibrary.wiley.com/doi/10.1002/qj.2911/full"
-          - authors: Spengler T, Renfrew IA, Terpstra A, Tjernström M, Screen J, Brooks I, Carleton A, Chechin D, Chen L, Doyle J, Esau I, Hezel P, Jung T, Kohyama T,  Lüpkes C, McCusker K, Nygård T, \sergeev, Shupe M, Sodemann H, and Vihma T
+          - authors: Spengler, T., I.A. Renfrew, A. Terpstra, M. Tjernström, J. Screen, I.M. Brooks, A. Carleton, D. Chechin, L. Chen, J. Doyle, I. Esau, P.J. Hezel, T. Jung, T. Kohyama, C. Lüpkes, K.E. McCusker, T. Nygård, \desergeev, M.D. Shupe, H. Sodemann, and T. Vihma
             time: 2016
             title: High Latitude Dynamics of Atmosphere-Ice-Ocean Interactions
             journal: Bulletin of American Meteorological Society
@@ -178,7 +197,7 @@ publications:
             issue: 9
             pages: ES179--ES182
             url: "http://journals.ametsoc.org/doi/full/10.1175/BAMS-D-15-00302.1"
-          - authors: Eliseev AV, \sergeev
+          - authors: Eliseev, A.V., \desergeev
             time: 2014
             title: Impact of Subgrid Scale Vegetation Heterogeneity on the Simulation of Carbon Cycle Characteristics
             journal: Izvestiya, Atmospheric and Oceanic Physics
