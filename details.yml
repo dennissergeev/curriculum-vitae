@@ -175,12 +175,14 @@ publications:
             journal: Monthly Weather Review
             pages: 3325–3341
             volume: 146
+            url: "https://journals.ametsoc.org/doi/full/10.1175/MWR-D-18-0086.1"
           - authors: Shestakova, A.A., P.A. Toropov, V.M. Stepanenko, \desergeev, and I.A. Repina
             time: 2018
             title: "Observations and modelling of downslope windstorm in Novorossiysk"
             journal: Dynamics of Atmospheres and Oceans
             volume: 83
             pages: 83--99
+            url: "https://www.sciencedirect.com/science/article/pii/S0377026518300356"
           - authors: \sergeev, I.A. Renfrew, T. Spengler, and S.R. Dorling 
             time: 2017
             title: Structure of a shear-line polar low
@@ -229,6 +231,10 @@ publications:
 conferences:
     - type: Oral presentations
       items:
+          - title: Simulations of moist convection on tidally-locked rocky exoplanets
+            conference: Exoclimes V
+            date: Aug 2019
+            location: Oxford, UK
           - title: North Atlantic polar mesoscale cyclones in ERA5 and ERA-Interim reanalyses
             url: "https://speakerdeck.com/dennissergeev/north-atlantic-polar-mesoscale-cyclones-in-era5-and-era-interim-reanalyses"
             conference: IGP workshop
@@ -255,7 +261,7 @@ conferences:
             date: Apr 2017
             location: Cambridge, UK
           - title: Structure of the shear-line polar low south of Svalbard
-            url: "http://slides.com/denissergeev/deck"
+            url: "https://github.com/dennissergeev/NORPAN-talk-2017-06-07"
             conference: NORPAN kick-off meeting
             date: May 2016
             location: Tokyo, Japan
@@ -331,7 +337,7 @@ service:
           - Quarterly Journal of the Royal Meteorological Society (x3)
 
 outreach:
-    - time: 2015--2015
+    - time: 2014--2015
       name: Contributor to SciSnack blogging platform
       items:
             - title: Disastrous Disaster Movies
