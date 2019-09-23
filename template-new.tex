@@ -326,7 +326,7 @@ $endfor$
 \section{Outreach} 
 $for(outreach)$
 \cventry{$outreach.time$}%
-{$outreach.name$}%
+{$if(outreach.url)$\href{$outreach.url$}$endif${$outreach.name$}}%
 {}%
 {}%
 {}%
@@ -335,7 +335,7 @@ $for(outreach)$
 {\small%
 \begin{tightemize}
 $for(outreach.items)$
-\item \href{$outreach.items.url$}{$outreach.items.title$}
+\item $if(outreach.items.url)$\href{$outreach.items.url$}$endif${$outreach.items.title$}
 $endfor$
 \end{tightemize}
 }

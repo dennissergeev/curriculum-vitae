@@ -162,7 +162,7 @@ publications:
             time: 2019
             title: "North Atlantic polar mesoscale cyclones in ERA5 and ERA-Interim reanalyses"
             journal: Geophysical Research Letters
-            volume: submitted
+            volume: under review
           - authors: Renfrew, I.A., R.S. Pickart, K. Våge, G.W. Moore, T.J. Bracegirdle, A.D. Elvidge, E. Jeansson, T. Lachlan-Cope, L. McRaven, L. Papritz, J. Reuder, H. Sodemann, A. Terpstra, S. Waterman, H. Valdimarsson, A. Weiss, M. Almansi, F. Bahr, A. Brakstad, C. Barrell, J.K. Brooke, B. Brooks, I.M. Brooks, M.E. Brooks, E.M. Bruvik, C. Duscha, I. Fer, H.M. Golid, M. Hallerstig, I. Hessevik, J. Huang, L. Houghton, S. Jónsson, M. Jonassen, K. Jackson, K. Kvalsund, E.W. Kolstad, K. Konstali, J. Kristiansen, R. Ladkin, P. Lin, A. Macrander, A. Mitchell, H. Olafsson, A. Pacini, C. Payne, B. Palmason, M.D. Pérez-Hernández, A.K. Peterson, G.N. Petersen, M.N. Pisareva, J.O. Pope, A. Seidl, S. Semper, \desergeev, S. Skjelsvik, H. Søiland, D. Smith, M.A. Spall, T. Spengler, A. Touzeau, G. Tupper, Y. Weng, K.D. Williams, X. Yang, and S. Zhou
             time: 2019
             title: "The Iceland Greenland Seas Project"
@@ -337,6 +337,11 @@ service:
           - Quarterly Journal of the Royal Meteorological Society (x3)
 
 outreach:
+    - time: 2019
+      name: School outreach programme "Exoplanet Explorers"
+      url: "http://emps.exeter.ac.uk/exoplanetexplorers/"
+      items:
+            - title: Visit to Pool Academy
     - time: 2014--2015
       name: Contributor to SciSnack blogging platform
       items:
@@ -405,15 +410,15 @@ languages:
       proficiency: Basic
 
 referees:
+    - name: Dr F Hugo Lambert
+      institute: University of Exeter
+      email: f.h.lambert@exeter.ac.uk
     - name: Prof Ian Renfrew
       institute: University of East Anglia
       email: i.renfrew@uea.ac.uk
     - name: Prof Thomas Spengler
       institute: University of Bergen
       email: thomas.spengler@uib.no
-    - name: Dr F Hugo Lambert
-      institute: University of Exeter
-      email: f.h.lambert@exeter.ac.uk
 
 # Settings
 lang: en-GB
