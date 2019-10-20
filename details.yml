@@ -167,13 +167,14 @@ publications:
             time: 2019
             title: "The Iceland Greenland Seas Project"
             journal: Bulletin of American Meteorological Society
-            volume: accepted
+            volume: 100
+            pages: 1795--1817
             url: "https://doi.org/10.1175/BAMS-D-18-0217.1"
           - authors: \sergeev, I.A. Renfrew, and T. Spengler
             time: 2018
             title: "Modification of polar low development by orography and sea ice"
             journal: Monthly Weather Review
-            pages: 3325–3341
+            pages: 3325--3341
             volume: 146
             url: "https://journals.ametsoc.org/doi/full/10.1175/MWR-D-18-0086.1"
           - authors: Shestakova, A.A., P.A. Toropov, V.M. Stepanenko, \desergeev, and I.A. Repina
@@ -209,19 +210,19 @@ publications:
             url: "https://link.springer.com/article/10.1134/S0001433814020030"
     - name: Proceedings
       items:
-          - authors: \sergeev, Stepanenko VM
+          - authors: \sergeev, V.M. Stepanenko
             time: 2013
             title: Numerical modelling of polar mesocyclones generation mechanisms
             journal: International Conference "Turbulence, atmosphere and climate dynamics" dedicated to A.M. Obukhov
             volume: Selected papers
             pages: 168--170
-          - authors: \sergeev, Zamyatina MY, Stepanenko VM
+          - authors: \sergeev, M.Y. Zamyatina, V.M. Stepanenko
             time: 2013
             title: Thermal regime features of Kronotsky lake (in Russian)
             journal: Kronotsky State Natural Biosphere Reserve Proceedings
             volume: 3
             pages: 29--41
-          - authors: \sergeev, Stepanenko VM
+          - authors: \sergeev, V.M. Stepanenko
             time: 2012
             title: Parameterization of mesoscale sensible heat and methane fluxes in the region of Western Siberia
             journal: International Conference and Early Career Scientists School on Environmental Observations, modelling and Information Systems (ENVIROMIS-2012)
@@ -232,6 +233,7 @@ conferences:
     - type: Oral presentations
       items:
           - title: Simulations of moist convection on tidally-locked rocky exoplanets
+            url: "https://youtu.be/9nGIpQiPwDs"
             conference: Exoclimes V
             date: Aug 2019
             location: Oxford, UK
@@ -381,12 +383,18 @@ skills:
       forte: Python
       skill:
           - Fortran
-    - group: Data visualisation
-      forte: Python
-      skill:
           - Matlab
           - NCL
-          - Paraview
+    - group: Python libraries
+      skill:
+          - numpy
+          - iris
+          - xarray
+          - pandas
+          - matplotlib
+          - cartopy
+          - pyvista
+          - cython
     - group: Parallel programming
       skill:
           - Dask

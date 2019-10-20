@@ -201,7 +201,7 @@ $endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SUPERVISION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Supervision of students}
+\section{Supervision}
 $for(supervision)$
 \cventry{$supervision.time$}%
 {$supervision.name$}%
@@ -217,7 +217,7 @@ $endfor$
 %    SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computer Skills}
-\doublecol{%
+% \doublecol{%
 $for(skills)$
 \descript{$skills.group$: }%
 $if(skills.forte)$\emph{$skills.forte$}\customsep$endif$%
@@ -230,7 +230,7 @@ $skills.skill$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
 $endfor$
 \\
 $endfor$
-}
+% }
 \vspace{-8pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LANGUAGES
