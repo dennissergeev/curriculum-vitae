@@ -436,5 +436,5 @@ referees:
 
 # Settings
 lang: en-GB
-geometry: a4paper, left=10mm, right=10mm, top=15mm, bottom=15mm
+geometry: a4paper,left=10mm,right=10mm,top=15mm,bottom=15mm
 ---
