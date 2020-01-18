@@ -1,6 +1,6 @@
 TEX = pandoc
 srcold = template-old.tex details.yml
-srcnew = template-new.tex details.yml deedy-resume-openfont.cls
+srcnew = template_new.tex details.yml deedy-resume-openfont.cls
 outold = cv-sergeev-old.pdf
 outnew = cv-sergeev-new.pdf
 FLAGS = --pdf-engine=xelatex
