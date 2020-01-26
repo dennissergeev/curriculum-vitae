@@ -1,20 +1,26 @@
 TEX = pandoc
-src = template_cv.tex details.yml deedy-resume-openfont.cls
-outpdf = cv_sergeev.pdf
+src = details.yml deedy-resume-openfont.cls
+tmpl_full = template_full.tex
+tmpl_short = template_short.tex
+full = cv_sergeev_full.pdf
+short = cv_sergeev_short.pdf
 FLAGS = --pdf-engine=xelatex --from=markdown+yaml_metadata_block
 
-all: $(outpdf)
-	convert $(outpdf)[0] preview.png > /dev/null 2>&1
+all: $(full) $(short)
+	convert $(full)[0] preview.png > /dev/null 2>&1
 
-pdf: $(outpdf)
-	@xdg-open $(outpdf) > /dev/null 2>&1
+pdf: $(full)
+	@xdg-open $(full) > /dev/null 2>&1
 
-preview: $(outpdf)
-	convert $(outpdf)[0] preview.png
+preview: $(full)
+	convert $(full)[0] preview.png
 
-$(outpdf) : $(src)
+$(full) : $(tmpl_full) $(src)
+	$(TEX) $(filter-out $<,$^) -o $@ --template=$< $(FLAGS)
+
+$(short) : $(tmpl_short) $(src)
 	$(TEX) $(filter-out $<,$^) -o $@ --template=$< $(FLAGS)
 
 .PHONY: clean
 clean :
-	rm $(outpdf)
+	rm $(full) $(short) preview.png

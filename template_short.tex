@@ -1,0 +1,252 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt]{deedy-resume-openfont}
+%\usepackage{fancyhdr}
+% 
+%\pagestyle{fancy}
+%\fancyhf{}
+
+% Margins
+%\usepackage[$geometry$]{geometry} 
+
+% Set the main language
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% PDF SETUP
+%--------------------------------
+\hypersetup
+{
+  pdfauthor={$firstname$ $lastname$},
+  pdfsubject={$firstname$ $lastname$'s CV},
+  pdftitle={$firstname$ $lastname$'s CV},
+}
+% personal data
+\newcommand{\sergeev}{\textbf{Sergeev, D.E.}}
+\newcommand{\desergeev}{\textbf{D.E. Sergeev}}
+
+% Counters
+\newcounter{counterA}
+\newcounter{counterB}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{$firstname$}{$lastname$}{% \urlstyle{same}
+$if(mobilephone)$
+~~\mobilephonesymbol$mobilephone$
+$endif$
+$if(email)$
+~~\emailsymbol\href{mailto:$email$}{$email$}
+$endif$
+$if(homepage)$
+~~\homepagesymbol\href{https://$homepage$}{$homepage$}
+$endif$
+$if(github)$
+~~\githubsymbol\href{https://github.com/$github$}{$github$}
+$endif$
+$if(twitter)$
+~~\twittersymbol\href{https://twitter.com/$twitter$}{$twitter$}
+$endif$
+$if(address)$
+\\
+$address$ 
+$endif$
+}
+$if(profile)$
+\begin{minipage}[t]{\textwidth}
+$profile$
+\end{minipage}
+\sectionsep
+$endif$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFESSIONAL EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Professional Experience}
+$for(professional)$
+\cventry{$professional.time$}%
+{$professional.position$}%
+{$professional.topic$}%
+{$if(professional.department)$$professional.department$$endif$}%
+{$if(professional.institution)$\emph{$professional.institution$}$endif$}%
+{$if(professional.location)$$professional.location$$endif$}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+$for(education)$
+\cventry{$education.time$}%
+{$education.degree$}%
+{$if(education.distinct)$$education.distinct$$endif$}%
+{$if(education.institution)$\emph{$education.institution$}$endif$}%
+{$if(education.location)$$education.location$$endif$}%
+{$if(education.supervisor)$%
+\setcounter{counterA}{0}%
+\setcounter{counterB}{0}%
+\def\variable{0}
+$for(education.supervisor)$\stepcounter{counterA}$endfor$%
+\ifnum\value{counterA}>1%
+Supervisors: 
+$for(education.supervisor)$%
+\stepcounter{counterB}%
+$education.supervisor$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
+$endfor$%
+\else%
+Supervisor: $education.supervisor$%
+\fi%
+$endif$%
+}%
+{$if(education.thesis)$Thesis title: \textbf{$education.thesis$}$endif$
+}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERNSHIPS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Internships}
+$for(internship)$
+\cventry{$internship.time$}%
+{$internship.title$}%
+{$if(internship.department)$$internship.department$$endif$}%
+{$if(internship.institution)$\emph{$internship.institution$}$endif$}%
+{$if(internship.location)$$internship.location$$endif$}%
+{$if(internship.supervisor)$%
+\setcounter{counterA}{0}%
+\setcounter{counterB}{0}%
+$for(internship.supervisor)$\stepcounter{counterA}$endfor$%
+\ifnum\value{counterA}>1%
+Supervisors: 
+$for(internship.supervisor)$%
+\stepcounter{counterB}%
+$internship.supervisor$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
+$endfor$%
+\else%
+Supervisor: $internship.supervisor$%
+\fi%
+$endif$}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+$for(publications)$
+\subsection{$publications.name$}
+\begin{etaremune}
+    $for(publications.items)$
+        \item $if(publications.items.url)$\href{$publications.items.url$}$endif${%
+              $publications.items.authors$. $publications.items.time$. $publications.items.title$.%
+              $if(publications.items.journal)$~~\emph{$publications.items.journal$}$endif$%
+              $if(publications.items.volume)$, $publications.items.volume$$endif$%
+              $if(publications.items.issue)$($publications.items.issue$)$endif$%
+              $if(publications.items.pages)$: $publications.items.pages$$endif$}
+    $endfor$
+\end{etaremune}
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CONFERENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conferences}
+$for(conferences)$
+\subsection{$conferences.type$}
+$for(conferences.items)$
+\cventry{$conferences.items.date$}%
+{$if(conferences.items.url)$\href{$conferences.items.url$}$endif${$conferences.items.title$}}%
+{$conferences.items.conference$}%
+{$conferences.items.location$}%
+{}%
+{}%
+{}%
+$endfor$
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards and Scholarships}
+$for(awards)$
+\cventry{$awards.time$}%
+{$awards.name$}%
+{$if(awards.by)$$awards.by$$endif$}%
+{}%
+{}%
+{}%
+{}%
+{}%
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUPERVISION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Supervision}
+$for(supervision)$
+\cventry{$supervision.time$}%
+{$supervision.name$}%
+{$if(supervision.type)$$supervision.type$$endif$}%
+{$if(supervision.institution)$\emph{$supervision.institution$}$endif$}%
+{$if(supervision.title)$$supervision.title$$endif$}%
+{}%
+{}%
+$endfor$
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Computer Skills}
+% \doublecol{%
+$for(skills)$
+\descript{$skills.group$: }%
+$if(skills.forte)$\emph{$skills.forte$}\customsep$endif$%
+\setcounter{counterA}{0}%
+\setcounter{counterB}{0}%
+$for(skills.skill)$\stepcounter{counterA}$endfor$%
+$for(skills.skill)$
+\stepcounter{counterB}%
+$skills.skill$\ifnum\value{counterB}<\value{counterA}\customsep\fi%
+$endfor$
+\\
+$endfor$
+% }
+\vspace{-8pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LANGUAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Languages}
+$for(languages)$
+\descript{$languages.language$: }$languages.proficiency$\\
+$endfor$
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDITORIAL SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Editorial Service} 
+$for(service)$
+\cventry{$service.name$}%
+{}%
+{}%
+{}%
+{}%
+{}%
+{%
+$for(service.items)$
+$service.items$\newline{}
+$endfor$
+}%
+$endfor$
+\lastupdated
+\end{document}
