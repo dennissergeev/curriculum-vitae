@@ -61,12 +61,6 @@ $if(address)$
 $address$ 
 $endif$
 }
-$if(profile)$
-\begin{minipage}[t]{\textwidth}
-$profile$
-\end{minipage}
-\sectionsep
-$endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROFESSIONAL EXPERIENCE
@@ -144,7 +138,9 @@ $endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Publications}
 $for(publications)$
-\subsection{$publications.name$}
+\ifthenelse{\equal{$publications.name$}{Peer-reviewed}}
+{%
+% \subsection{$publications.name$}
 \begin{etaremune}
     $for(publications.items)$
         \item $if(publications.items.url)$\href{$publications.items.url$}$endif${%
@@ -155,6 +151,7 @@ $for(publications)$
               $if(publications.items.pages)$: $publications.items.pages$$endif$}
     $endfor$
 \end{etaremune}
+}{}
 $endfor$
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -226,11 +223,11 @@ $endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LANGUAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Languages}
-$for(languages)$
-\descript{$languages.language$: }$languages.proficiency$\\
-$endfor$
-\sectionsep
+% \section{Languages}
+% $for(languages)$
+% \descript{$languages.language$: }$languages.proficiency$\\
+% $endfor$
+% \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDITORIAL SERVICE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

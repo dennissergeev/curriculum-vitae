@@ -52,7 +52,7 @@ Last updated: \mydate\today
 \centering{
 \fontsize{40pt}{60pt}
 \fontspec[Path=fonts/exo2/]{Exo2-Light}\selectfont #1 
-\fontspec[Path=fonts/exo2/]{Exo2-Medium}\selectfont #2
+\fontspec[Path=fonts/exo2/]{Exo2-Light}\selectfont #2
 } \\[5pt]
 \centering{
 \color{headings}

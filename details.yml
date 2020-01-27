@@ -13,7 +13,7 @@ twitter: meteodenny
 profile: My interests include exoplanet atmospheric dynamics, general circulation of the atmosphere, polar meteorology. Most of my current research focuses on the atmospheric modelling of terrestrial planets. I hope to contribute to our understanding of the climate regimes on different planets and their potential for habitability.
 
 professional:
-    - time: 2018--2021
+    - time: 2018--now
       position: Postdoctoral Research Fellow
       topic: Climate modelling of terrestrial exoplanets
       institution: University of Exeter
@@ -163,10 +163,15 @@ teaching:
 publications:
     - name: Peer-reviewed
       items:
-          - authors: \sergeev, I.A. Renfrew, T. Spengler, A. Terpstra, and S.-I. Watanabe
-            time: 2019
-            title: "North Atlantic polar mesoscale cyclones in ERA5 and ERA-Interim reanalyses"
-            journal: Geophysical Research Letters
+          - authors: \sergeev, F.H. Lambert, N.J. Mayne, I.A. Boutle, and K. Kohary
+            time: 2020
+            title: "Atmospheric convection plays a key role in the climate of tidally-locked terrestrial exoplanets: insights from convection-resolving simulations"
+            journal: Astrophysical Journal
+            volume: in prep.
+          - authors: M.M. Joshi, A.D. Elvidge, R. Wordsworth, and \desergeev
+            time: 2020
+            title: "Earth’s polar night boundary layer as an analogue for dark side inversions on tidally-locked terrestrial exoplanets"
+            journal: Astrophysical Journal Letters
             volume: under review
           - authors: Renfrew, I.A., R.S. Pickart, K. Våge, G.W. Moore, T.J. Bracegirdle, A.D. Elvidge, E. Jeansson, T. Lachlan-Cope, L. McRaven, L. Papritz, J. Reuder, H. Sodemann, A. Terpstra, S. Waterman, H. Valdimarsson, A. Weiss, M. Almansi, F. Bahr, A. Brakstad, C. Barrell, J.K. Brooke, B. Brooks, I.M. Brooks, M.E. Brooks, E.M. Bruvik, C. Duscha, I. Fer, H.M. Golid, M. Hallerstig, I. Hessevik, J. Huang, L. Houghton, S. Jónsson, M. Jonassen, K. Jackson, K. Kvalsund, E.W. Kolstad, K. Konstali, J. Kristiansen, R. Ladkin, P. Lin, A. Macrander, A. Mitchell, H. Olafsson, A. Pacini, C. Payne, B. Palmason, M.D. Pérez-Hernández, A.K. Peterson, G.N. Petersen, M.N. Pisareva, J.O. Pope, A. Seidl, S. Semper, \desergeev, S. Skjelsvik, H. Søiland, D. Smith, M.A. Spall, T. Spengler, A. Touzeau, G. Tupper, Y. Weng, K.D. Williams, X. Yang, and S. Zhou
             time: 2019
@@ -364,6 +369,7 @@ other:
     - time: Apr--Jun 2018
       title: Data technician
       info: Processing of meteorological data collected in the IGP field campaign
+      url: "https://github.com/IGPResearch"
       location: University of East Anglia
     - time: 2015--Present
       title: Python group leader
@@ -372,6 +378,7 @@ other:
       location: University of East Anglia
     - time: Mar 2015
       title: Rapporteur
+      url: "https://highlatdynamics.w.uib.no/"
       info: Dynamics of Atmosphere-Ice-Ocean Interactions in the High-Latitudes workshop
       location: Rosendal, Norway
     - time: Aug--Sep 2013 
@@ -380,11 +387,11 @@ other:
       location: Main Aviation Meteorological Centre, Vnukovo Airport
 
 skills:
-    - group: Operating systems
-      forte: Linux
-      skill:
-          - Unix
-          - Windows
+#    - group: Operating systems
+#      forte: Linux
+#      skill:
+#          - Unix
+#          - Windows
     - group: Computer languages
       forte: Python
       skill:
@@ -414,6 +421,7 @@ skills:
       skill:
           - LaTeX
           - Markdown
+          - HTML
 
 languages:
     - language: Russian
