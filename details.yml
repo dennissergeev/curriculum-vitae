@@ -63,6 +63,11 @@ internship:
 
 supervision:
     - time: 2020-2021
+      name: Toby Ferrison 
+      institution: University of Exeter
+      type: MSc
+      title: "Fate of condensible species on Titan"
+    - time: 2020-2021
       name: James Norman
       institution: University of Exeter
       type: MSc
@@ -167,12 +172,12 @@ publications:
             time: 2020
             title: "Atmospheric convection plays a key role in the climate of tidally-locked terrestrial exoplanets: insights from convection-resolving simulations"
             journal: Astrophysical Journal
-            volume: in prep.
+            volume: Submitted.
           - authors: M.M. Joshi, A.D. Elvidge, R. Wordsworth, and \desergeev
             time: 2020
             title: "Earth’s polar night boundary layer as an analogue for dark side inversions on tidally-locked terrestrial exoplanets"
             journal: Astrophysical Journal Letters
-            volume: under review
+            volume: Under review.
           - authors: Renfrew, I.A., R.S. Pickart, K. Våge, G.W. Moore, T.J. Bracegirdle, A.D. Elvidge, E. Jeansson, T. Lachlan-Cope, L. McRaven, L. Papritz, J. Reuder, H. Sodemann, A. Terpstra, S. Waterman, H. Valdimarsson, A. Weiss, M. Almansi, F. Bahr, A. Brakstad, C. Barrell, J.K. Brooke, B. Brooks, I.M. Brooks, M.E. Brooks, E.M. Bruvik, C. Duscha, I. Fer, H.M. Golid, M. Hallerstig, I. Hessevik, J. Huang, L. Houghton, S. Jónsson, M. Jonassen, K. Jackson, K. Kvalsund, E.W. Kolstad, K. Konstali, J. Kristiansen, R. Ladkin, P. Lin, A. Macrander, A. Mitchell, H. Olafsson, A. Pacini, C. Payne, B. Palmason, M.D. Pérez-Hernández, A.K. Peterson, G.N. Petersen, M.N. Pisareva, J.O. Pope, A. Seidl, S. Semper, \desergeev, S. Skjelsvik, H. Søiland, D. Smith, M.A. Spall, T. Spengler, A. Touzeau, G. Tupper, Y. Weng, K.D. Williams, X. Yang, and S. Zhou
             time: 2019
             title: "The Iceland Greenland Seas Project"
