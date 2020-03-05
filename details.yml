@@ -86,6 +86,9 @@ supervision:
 
 training:
     - items:
+        - name: "ESA JWST Master Class"
+          time: Mar 2020
+          url: "https://ers-imaging.github.io/uk_workshop"
         - name: "2nd ICTP Summer School on Theory, Mechanisms and Hierarchical Modelling of Climate Dynamics: Convective Organization and Climate Sensitivity"
           time: Jul 2019
           url: "http://indico.ictp.it/event/8669/"
@@ -170,7 +173,7 @@ publications:
       items:
           - authors: \sergeev, F.H. Lambert, N.J. Mayne, I.A. Boutle, and K. Kohary
             time: 2020
-            title: "Atmospheric convection plays a key role in the climate of tidally-locked terrestrial exoplanets: insights from convection-resolving simulations"
+            title: "Atmospheric convection plays a key role in the climate of tidally-locked terrestrial exoplanets: insights from high-resolution simulations"
             journal: Astrophysical Journal
             volume: Submitted.
           - authors: M.M. Joshi, A.D. Elvidge, R. Wordsworth, and \desergeev
