@@ -251,6 +251,13 @@ publications:
             pages: 67--69
 
 conferences:
+    - type: Invited oral presentations
+      items:
+          - title: "Atmospheric convection plays a key role in the climate of tidally locked exoplanets"
+            url: "https://slides.com/denissergeev/2020-04-21-nasa-giss"
+            conference: Online seminar
+            date: Apr 2020
+            location: NASA GISS, USA
     - type: Oral presentations
       items:
           - title: Simulations of moist convection on tidally-locked rocky exoplanets
