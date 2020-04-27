@@ -258,6 +258,11 @@ conferences:
             conference: Online seminar
             date: Apr 2020
             location: NASA GISS, USA
+          - title: "Atmospheric convection plays a key role in the climate of tidally locked exoplanets"
+            url: "https://slides.com/denissergeev/2020-04-27-uor-met"
+            conference: Online seminar
+            date: Apr 2020
+            location: University of Reading, UK
     - type: Oral presentations
       items:
           - title: Simulations of moist convection on tidally-locked rocky exoplanets
