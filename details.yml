@@ -175,8 +175,9 @@ publications:
             time: 2020
             title: "Atmospheric convection plays a key role in the climate of tidally-locked terrestrial exoplanets: insights from high-resolution simulations"
             journal: Astrophysical Journal
-            volume: Accepted.
-            url: "https://arxiv.org/abs/2004.03007"
+            volume: 894
+            pages: 84--103
+            url: "https://doi.org/10.3847/1538-4357/ab8882"
           - authors: M.M. Joshi, A.D. Elvidge, R. Wordsworth, and \desergeev
             time: 2020
             title: "Earth's polar night boundary layer as an analogue for dark side inversions on tidally-locked terrestrial exoplanets"
