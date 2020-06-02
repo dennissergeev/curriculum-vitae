@@ -374,6 +374,11 @@ service:
           - Planetary and Space Science (x1)
 
 outreach:
+    - time: 2020
+      name: Graphics
+      items:
+            - title: '"Exoplanetary Atmospheres" at Science as Art Gallery (Exeter Science Centre)'
+              url: "https://exetersciencecentre.org/gallery/denis_sergeev_uoe_exoplanets/"
     - time: 2019
       name: School outreach programme "Exoplanet Explorers"
       url: "http://emps.exeter.ac.uk/exoplanetexplorers/"
@@ -411,11 +416,6 @@ other:
       location: Main Aviation Meteorological Centre, Vnukovo Airport
 
 skills:
-#    - group: Operating systems
-#      forte: Linux
-#      skill:
-#          - Unix
-#          - Windows
     - group: Computer languages
       forte: Python
       skill:
