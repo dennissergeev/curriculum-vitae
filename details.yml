@@ -86,6 +86,9 @@ supervision:
 
 training:
     - items:
+        - name: "Writing Workshop for Climate Scientists"
+          time: Jul 2020
+          url: "https://www.eventbrite.co.uk/e/writing-workshop-for-climate-scientists-tickets-96881815117?aff=erelpanelorg#"
         - name: "ESA JWST Master Class"
           time: Mar 2020
           url: "https://ers-imaging.github.io/uk_workshop"
