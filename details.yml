@@ -62,6 +62,11 @@ internship:
       supervisor: Dr. Alexey Eliseev
 
 supervision:
+    - time: 2020
+      name: Joshua Parkin
+      institution: University of Exeter
+      type: Summer student
+      title: "The impact of host star spectrum on the climate of a tidally locked exoplanet"
     - time: 2020-2021
       name: Toby Ferrison 
       institution: University of Exeter
@@ -81,7 +86,7 @@ supervision:
       name: Jake Eager
       institution: University of Exeter
       type: MSc
-      title: "Implications of Stellar Type on the Habitability of Tidally Locked Terrestrial Exoplanets"
+      title: "Implications of stellar type on the habitability of tidally locked terrestrial exoplanets"
 
 
 training:
