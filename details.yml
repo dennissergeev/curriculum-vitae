@@ -179,6 +179,13 @@ teaching:
 publications:
     - name: Peer-reviewed
       items:
+          - authors: Eager, J.K., D.J. Reichelt, N.J. Mayne, F.H. Lambert, \desergeev, R.J. Ridgway, J. Manners, I.A. Boutle, T.M. Lenton and K. Kohary
+            time: 2020
+            title: "Implications of different stellar spectra for the climate of tidally locked Earth-like exoplanets"
+            journal: Astronomy and Astrophysics
+            volume: 639
+            pages: A99
+            url: "https://doi.org/10.1051/0004-6361/202038089"
           - authors: \sergeev, F.H. Lambert, N.J. Mayne, I.A. Boutle, J. Manners and K. Kohary
             time: 2020
             title: "Atmospheric convection plays a key role in the climate of tidally-locked terrestrial exoplanets: insights from high-resolution simulations"
@@ -186,7 +193,7 @@ publications:
             volume: 894
             pages: 84--103
             url: "https://doi.org/10.3847/1538-4357/ab8882"
-          - authors: M.M. Joshi, A.D. Elvidge, R. Wordsworth, and \desergeev
+          - authors: Joshi, M.M., A.D. Elvidge, R. Wordsworth, and \desergeev
             time: 2020
             title: "Earth's polar night boundary layer as an analogue for dark side inversions on tidally-locked terrestrial exoplanets"
             journal: Astrophysical Journal Letters
