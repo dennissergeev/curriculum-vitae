@@ -269,16 +269,21 @@ publications:
 conferences:
     - type: Invited oral presentations
       items:
+          - title: "Simulations of convection over a range of atmospheric conditions on TRAPPIST-1e"
+            url: "https://youtu.be/E4UAoCoI1x8"
+            conference: THAI workshop
+            date: Sep 2020
+            location: Online
           - title: "Atmospheric convection plays a key role in the climate of tidally locked exoplanets"
             url: "https://slides.com/denissergeev/2020-04-21-nasa-giss"
-            conference: Online seminar
+            conference: NASA GISS seminar
             date: Apr 2020
-            location: NASA GISS, USA
+            location: Online
           - title: "Atmospheric convection plays a key role in the climate of tidally locked exoplanets"
             url: "https://slides.com/denissergeev/2020-04-27-uor-met"
-            conference: Online seminar
+            conference: University of Reading Meteorology seminar
             date: Apr 2020
-            location: University of Reading, UK
+            location: Online
     - type: Oral presentations
       items:
           - title: Simulations of moist convection on tidally-locked rocky exoplanets
