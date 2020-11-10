@@ -286,6 +286,11 @@ conferences:
             location: Online
     - type: Oral presentations
       items:
+          - title: Explicit convection on tidally locked rocky exoplanets simulated with the UM nesting suite
+            url: "https://slides.com/denissergeev/2020-11-10-um-workshop-sergeev"
+            conference: Unified Model users workshop
+            date: Nov 2020
+            location: Online
           - title: Simulations of moist convection on tidally-locked rocky exoplanets
             url: "https://youtu.be/9nGIpQiPwDs"
             conference: Exoclimes V
