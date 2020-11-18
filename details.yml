@@ -62,21 +62,16 @@ internship:
       supervisor: Dr. Alexey Eliseev
 
 supervision:
-    - time: 2020
-      name: Joshua Parkin
-      institution: University of Exeter
-      type: Summer student
-      title: "The impact of host star spectrum on the climate of a tidally locked exoplanet"
     - time: 2020-2021
       name: Toby Ferrison 
       institution: University of Exeter
       type: MSc
       title: "Fate of condensible species on Titan"
-    - time: 2020-2021
-      name: James Norman
+    - time: 2020
+      name: Joshua Parkin
       institution: University of Exeter
-      type: MSc
-      title: "Ice-albedo feedback on extrasolar planets"
+      type: Summer student
+      title: "The impact of host star spectrum on the climate of a tidally locked exoplanet"
     - time: 2019
       name: Isobel Parry
       institution: University of Exeter
