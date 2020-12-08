@@ -272,6 +272,11 @@ conferences:
     - type: Invited oral presentations
       items:
           - title: "Simulations of convection over a range of atmospheric conditions on TRAPPIST-1e"
+            url: "https://emps.exeter.ac.uk/mathematics/research/cgafd/events/event/?semID=2652&dateID=5416"
+            conference: GAFD seminar
+            date: Dec 2020
+            location: Online
+          - title: "Simulations of convection over a range of atmospheric conditions on TRAPPIST-1e"
             url: "https://youtu.be/E4UAoCoI1x8"
             conference: THAI workshop
             date: Sep 2020
