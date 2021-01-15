@@ -62,13 +62,23 @@ internship:
       supervisor: Dr. Alexey Eliseev
 
 supervision:
+    - time: 2021-2022
+      name: Esse Sellwood, Jasper Chadwick and Matthew Seymour
+      institution: University of Exeter
+      type: MSc
+      title: "The effect of oceanic dynamics on the climates of rocky exoplanets"
+    - time: 2021-2022
+      name: Izzy Browne and Oakley Young
+      institution: University of Exeter
+      type: MSc
+      title: "Greenhouse effect on Early Mars"
     - time: 2020-2021
       name: Toby Ferrison 
       institution: University of Exeter
       type: MSc
       title: "Fate of condensible species on Titan"
     - time: 2020
-      name: Joshua Parkin
+      name: Joshua Parkin and Esse Sellwood
       institution: University of Exeter
       type: Summer student
       title: "The impact of host star spectrum on the climate of a tidally locked exoplanet"
@@ -151,7 +161,7 @@ fieldwork:
 teaching:
     - time: Jan 2018
       title: ECR course "Introduction to Python in Environmental Sciences"
-      info: Course leader
+      info: Course creator
       url: "https://ueapy.github.io/pythoncourse2018"
       institution: University of East Anglia
       location: Norwich, UK
@@ -375,39 +385,30 @@ awards:
       name: Lord Zuckerman scholarship
       by: School of Environmental Sciences, University of East Anglia
     - time: 2014
-      name: Young Scientist's Travel Award (YSTA)
+      name: Young Scientist's Travel Award
       by: European Geosciences Union (EGU) General Assembly
     - time: 2014
       name: Russian Academy of Sciences Young Scientist Medal
-#    - time: 2009
-#      name: 3rd place in the All-Russian Geography Olympiad
-#     - time: 2009
-#       name: 1st place in the Lomonosov Geography Olympiad
-
-# grants:
-#     - time: 2014--2016
-#       title: Characteristics of the mesoscale atmospheric circulations in the Arctic and their influence on the atmosphere-ocean energy exchange
-#       institution: Russian Foundation for Basic Research (RFBR) Grant
-#     - time: 2013--2015
-#       title: Multiscale modelling of turbulent atmospheric flow above sea surface with inhomogeneous ice cover
-#       institution: Russian Foundation for Basic Research (RFBR) Grant
-#     - time: 2013--2015
-#       title: Developing and verification of the mesoscale sensible heat and tracers fluxes over hydrologically inhomogeneous surface
-#       institution: Grant of the President of Russian Federation
 
 # memberships:
 #     - time: 2014--Present
 #       body: Royal Meteorological Society (RMetS)
 # 
 service:
-    - name: Acted as reviewer for
+    - name: Acted as a reviewer for
       items:
-          - Quarterly Journal of the Royal Meteorological Society (x3)
-          - Planetary and Space Science (x1)
+          - Astrophysical Journal
+          - Planetary and Space Science
+          - Quarterly Journal of the Royal Meteorological Society
 
 outreach:
     - time: 2020
-      name: Graphics
+      name: Science adviser
+      items:
+            - title: Computer game "Exoplanet Explorers" (STFC Nucleus grant "4EP", PI Nathan Mayne)
+              url: "http://emps.exeter.ac.uk/exoplanetexplorers/"
+    - time: 2020
+      name: Visualisation
       items:
             - title: '"Exoplanetary Atmospheres" at Science as Art Gallery (Exeter Science Centre)'
               url: "https://exetersciencecentre.org/gallery/denis_sergeev_uoe_exoplanets/"
@@ -417,7 +418,7 @@ outreach:
       items:
             - title: Visit to Pool Academy
     - time: 2014--2015
-      name: Contributor to SciSnack blogging platform
+      name: Blogging
       items:
             - title: Disastrous Disaster Movies
               url: "http://www.scisnack.com/2015/12/17/disastrous-disaster-movies/"
@@ -432,8 +433,8 @@ other:
       info: Processing of meteorological data collected in the IGP field campaign
       url: "https://github.com/IGPResearch"
       location: University of East Anglia
-    - time: 2015--Present
-      title: Python group leader
+    - time: 2015--2018
+      title: Python group creator and leader
       info: Founder and leader of the Python programming language users group
       url: "https://ueapy.github.io"
       location: University of East Anglia

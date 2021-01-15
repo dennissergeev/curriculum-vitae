@@ -220,30 +220,5 @@ $endfor$
 $endfor$
 % }
 \vspace{-8pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LANGUAGES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Languages}
-% $for(languages)$
-% \descript{$languages.language$: }$languages.proficiency$\\
-% $endfor$
-% \sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDITORIAL SERVICE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Editorial Service} 
-$for(service)$
-\cventry{$service.name$}%
-{}%
-{}%
-{}%
-{}%
-{}%
-{%
-$for(service.items)$
-$service.items$\newline{}
-$endfor$
-}%
-$endfor$
 \lastupdated
 \end{document}
