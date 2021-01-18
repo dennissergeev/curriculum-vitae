@@ -125,22 +125,22 @@ training:
           time: Jan 2017
     - type: Safety training
       items:
-        - name: Level 1 First Aid for Field Work course
-          time: Feb 2017
-        - name: Sea Survival course
-          time: Dec 2017
         - name: Helicopter Underwater Escape Training Course (CA-EBS)
           time: Jan 2018
+        - name: Sea Survival course
+          time: Dec 2017
+        - name: Level 1 First Aid for Field Work course
+          time: Feb 2017
 
 fieldwork:
     - time: Feb--Mar 2018
       title: The Iceland-Greenland Seas Project (IGP) field campaign
-      info: Characterising the atmospheric forcing and the ocean response of coupled atmosphere-ocean processes; in particular cold-air outbreaks in the vicinity of the marginal ice zone and their triggering of oceanic heat loss and the generation of dense water masses
+      info: Characterising the atmospheric forcing and the ocean response of coupled atmosphere-ocean processes; in particular cold-air outbreaks in the vicinity of the marginal ice zone and their effect on the ocean
       location: Akureyri, Iceland
     - time: Aug 2012 
       title: Field practice in meteorology
       info: Study of prevailing mesoscale processes via wind characteristic measurements and lake hydrothermodynamical modelling
-      location: Kronotsky National Reservation, Kamchatka pen., Russia
+      location: Kronotsky National Reservation, Kamchatka, Russia
     - time: Jan--Feb 2012 
       title: Field practice in meteorology
       info: Measurements of the convective boundary layer over the polynya
@@ -403,9 +403,9 @@ service:
 
 outreach:
     - time: 2020
-      name: Science adviser
+      name: Science consulting
       items:
-            - title: Computer game "Exoplanet Explorers" (STFC Nucleus grant "4EP", PI Nathan Mayne)
+            - title: Videogame "Exoplanet Explorers" (STFC Nucleus grant "4EP", PI Nathan Mayne)
               url: "http://emps.exeter.ac.uk/exoplanetexplorers/"
     - time: 2020
       name: Visualisation
@@ -434,8 +434,8 @@ other:
       url: "https://github.com/IGPResearch"
       location: University of East Anglia
     - time: 2015--2018
-      title: Python group creator and leader
-      info: Founder and leader of the Python programming language users group
+      title: Python group founder
+      info: Founder of the Python programming language users group
       url: "https://ueapy.github.io"
       location: University of East Anglia
     - time: Mar 2015
