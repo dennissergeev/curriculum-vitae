@@ -449,6 +449,13 @@ other:
       location: Main Aviation Meteorological Centre, Vnukovo Airport
 
 skills:
+    - group: Numerical models
+      forte: UK Met Office Unified Model
+      skill:
+          - SOCRATES
+          - LAGRANTO
+          - Isca
+          - ReMeDy
     - group: Computer languages
       forte: Python
       skill:
@@ -479,6 +486,7 @@ skills:
           - LaTeX
           - Markdown
           - HTML
+          - reST
 
 languages:
     - language: Russian
