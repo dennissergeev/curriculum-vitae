@@ -26,8 +26,8 @@
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Mapping=tex-text, Path=fonts/exo2/, BoldItalicFont=Exo2-LightItalic, BoldFont=Exo2-Light, ItalicFont=Exo2-ExtraLightItalic]{Exo2-ExtraLight}
-\setsansfont[Scale=MatchLowercase, Mapping=tex-text, Path=fonts/exo2/]{Exo2-Light}
+\setmainfont[Color=primary, Mapping=tex-text, Path=fonts/exo2/, BoldItalicFont=Exo2-BoldItalic, BoldFont=Exo2-Medium, ItalicFont=Exo2-LightItalic]{Exo2-Light}
+% \setsansfont[Scale=MatchLowercase, Mapping=tex-text, Path=fonts/exo2/]{Exo2-Regular}
 \usepackage{xltxtra}
 \usepackage{xunicode}
 
