@@ -96,19 +96,9 @@ Last updated: \mydate\today
 
 % multi columns
 \usepackage{multicol}
-\newcommand{\doublecol}[1]{%
+\newcommand{\ncol}[2]{%
 \vspace{-\topsep}
-\begin{multicols}{2}#1\end{multicols}%
-\vspace{-\topsep}
-}
-\newcommand{\triplecol}[1]{%
-\vspace{-\topsep}
-\begin{multicols}{3}#1\end{multicols}%
-\vspace{-\topsep}
-}
-\newcommand{\quadcol}[1]{%
-\vspace{-\topsep}
-\begin{multicols}{4}#1\end{multicols}%
+\begin{multicols}{#1}#2\end{multicols}%
 \vspace{-\topsep}
 }
 

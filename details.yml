@@ -68,7 +68,7 @@ supervision:
       type: MSc
       title: "The effect of oceanic dynamics on the climates of rocky exoplanets"
     - time: 2021-2022
-      name: Izzy Browne and Oakley Young
+      name: Isabelle Browne and Oakley Young
       institution: University of Exeter
       type: MSc
       title: "Greenhouse effect on Early Mars"
@@ -507,10 +507,13 @@ languages:
       proficiency: Basic
 
 referees:
-    - name: Dr F Hugo Lambert
+    - name: Prof F Hugo Lambert
       institute: University of Exeter
       email: f.h.lambert@exeter.ac.uk
-    - name: Prof Ian Renfrew
+    - name: Prof Nathan J. Mayne
+      institute: University of Exeter
+      email: n.j.mayne@exeter.ac.uk
+    - name: Prof Ian A. Renfrew
       institute: University of East Anglia
       email: i.renfrew@uea.ac.uk
     - name: Prof Thomas Spengler

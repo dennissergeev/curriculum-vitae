@@ -360,8 +360,9 @@ $endfor$
 %     REFERENCES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{References}
-%% \quadcol{%
-\triplecol{%
+\setcounter{counterA}{0}%
+$for(referees)$\stepcounter{counterA}$endfor$%
+\ncol{\value{counterA}}{%
 $for(referees)$
 \descript{$referees.name$}\\$if(referees.info)$$referees.info$\\$endif$$if(referees.institute)$$referees.institute$\\$endif$\href{mailto:$referees.email$}{$referees.email$}\\
 $endfor$
