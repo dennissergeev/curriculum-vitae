@@ -182,8 +182,10 @@ teaching:
       location: Norwich, UK
 
 publications:
-    - name: Submitted
-      items: 
+    # - name: Submitted
+    #   items: 
+    - name: Published
+      items:
           - authors: Fauchez, J. T., M. Turbet, \desergeev, N. J. Mayne, A. Spiga, L. Sohl, P. Saxena, R. Deitrick, G. Gilli, S. D.Domagal­Goldman, F. Forget, R. Consentino, R. Barnes, J. Haqq­Misra, M. J. Way, E. T. Wolf, S. Olson,J. S. Crouse, E. Janin, E. Bolmont, J. Leconte, G. Chaverot, Y. Jaziri, J. Yang, D. Pidhorodetska, R. K.Kopparapu, H. Chen, I. A. Boutle, M. Lefèvre, B. Charnay
             time: 2021
             title: "TRAPPIST Habitable Atmosphere Intercomparison (THAI) workshop report"
@@ -192,8 +194,8 @@ publications:
             time: 2021
             title: "Characteristics of cold air outbreak events and associated polar mesoscale cyclogenesis over the North Atlantic region"
             journal: Journal of Climate
-    - name: Published
-      items:
+            url: "https://doi.org/10.1175/JCLI-D-20-0595.1"
+            pages: 1-52
           - authors: Renfrew, I.A., C. Barrell, A.D. Elvidge, J.K. Brooke, C. Duscha, J.C. King, J. Kristiansen, T. Lachlan-Cope, G.W. Moore, R.S. Pickart, J. Reuder, I. Sandu, \desergeev, A. Terpstra, K. Våge, A. Weiss
             time: 2021
             title: "An evaluation of surface meteorology and fluxes over the Iceland and Greenland Seas in ERA5 reanalysis: The impact of sea ice distribution"
