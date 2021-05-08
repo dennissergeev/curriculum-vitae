@@ -63,7 +63,12 @@ internship:
 
 supervision:
     - time: 2021-2022
-      name: Esse Sellwood, Jasper Chadwick and Matthew Seymour
+      name: Meghan Plumridge 
+      institution: University of Exeter
+      type: MSc
+      title: "Climate of modern Mars"
+    - time: 2021-2022
+      name: Esse Sellwood and Jasper Chadwick
       institution: University of Exeter
       type: MSc
       title: "The effect of oceanic dynamics on the climates of rocky exoplanets"
@@ -293,6 +298,11 @@ publications:
 conferences:
     - type: Invited oral presentations
       items:
+          - title: "Overcast on TRAPPIST-1e"
+            url: "https://youtu.be/ZUfIK-HMgLw"
+            conference: RCC MSU Geophysical seminar
+            date: May 2021
+            location: Online
           - title: "Simulations of convection over a range of atmospheric conditions on TRAPPIST-1e"
             url: "https://emps.exeter.ac.uk/mathematics/research/cgafd/events/event/?semID=2652&dateID=5416"
             conference: GAFD seminar
