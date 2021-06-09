@@ -191,10 +191,13 @@ publications:
     #   items: 
     - name: Published
       items:
-          - authors: Fauchez, J. T., M. Turbet, \desergeev, N. J. Mayne, A. Spiga, L. Sohl, P. Saxena, R. Deitrick, G. Gilli, S. D.Domagal­Goldman, F. Forget, R. Consentino, R. Barnes, J. Haqq­Misra, M. J. Way, E. T. Wolf, S. Olson,J. S. Crouse, E. Janin, E. Bolmont, J. Leconte, G. Chaverot, Y. Jaziri, J. Yang, D. Pidhorodetska, R. K.Kopparapu, H. Chen, I. A. Boutle, M. Lefèvre, B. Charnay
+          - authors: Fauchez, J. T., M. Turbet, \desergeev, N. J. Mayne, A. Spiga, L. Sohl, P. Saxena, R. Deitrick, G. Gilli, S. D. Domagal­Goldman, F. Forget, R. Consentino, R. Barnes, J. Haqq-Misra, M. J. Way, E. T. Wolf, S. Olson, J. S. Crouse, E. Janin, E. Bolmont, J. Leconte, G. Chaverot, Y. Jaziri, J. Yang, D. Pidhorodetska, R. K.Kopparapu, H. Chen, I. A. Boutle, M. Lefèvre, B. Charnay
             time: 2021
-            title: "TRAPPIST Habitable Atmosphere Intercomparison (THAI) workshop report"
+            title: "TRAPPIST Habitable Atmosphere Intercomparison (THAI) Workshop Report"
             journal: Planetary Science Journal
+            volume: 2(3)
+            pages: 106
+            url: "https://iopscience.iop.org/article/10.3847/PSJ/abf4df"
           - authors: Terpstra, A., I. A. Renfrew, \desergeev
             time: 2021
             title: "Characteristics of cold air outbreak events and associated polar mesoscale cyclogenesis over the North Atlantic region"
@@ -419,6 +422,7 @@ awards:
 service:
     - name: Acted as a reviewer for
       items:
+          - Science and Technology Facilities Council (STFC) grant
           - Astrophysical Journal
           - Planetary and Space Science
           - Quarterly Journal of the Royal Meteorological Society
