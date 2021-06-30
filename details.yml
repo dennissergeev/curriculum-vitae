@@ -66,12 +66,17 @@ supervision:
       name: Meghan Plumridge 
       institution: University of Exeter
       type: MSc
-      title: "Climate of modern Mars"
+      title: "Martian climate evolution"
     - time: 2021-2022
       name: Esse Sellwood and Jasper Chadwick
       institution: University of Exeter
       type: MSc
       title: "The effect of oceanic dynamics on the climates of rocky exoplanets"
+    - time: 2021
+      name: Oakley Young
+      institution: University of Exeter
+      type: Summer student
+      title: "Climate modelling of Archean Earth"
     - time: 2021-2022
       name: Isabelle Browne and Oakley Young
       institution: University of Exeter
